@@ -1,0 +1,48 @@
+@import '../../partials/variables';
+
+.header{
+   width: 100%;
+   background-color:$light-g;
+   padding:1rem 0;
+   box-shadow: 2px 3px 5px#000000b1;
+   &__nav{
+      display:flex;
+      padding:0 1rem;
+      width:100%;
+      box-sizing: border-box;
+   }
+
+}
+
+.nav__homepage,
+.nav__location{
+   color:$light-text;
+   font-size: 20px;
+   font-weight:700;
+   margin-left:1rem;
+}
+
+.link{
+   text-decoration: none;
+}
+
+.nav__wrapper{
+   margin-left:auto;
+   display:flex;
+   align-self: flex-end;
+   align-items: center;
+}
+
+.nav__username{
+   color:$light-text;
+   font-size: 20px;
+   font-weight:700;
+}
+
+.nav__user-wrap-photo{
+   background-color: $light-p;
+   border-radius: 50px;
+   width:50px;
+   height:50px;
+   margin-left: 1rem;
+}
