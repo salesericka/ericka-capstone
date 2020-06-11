@@ -2,9 +2,10 @@ import React from "react";
 import { ComposableMap, Geographies, Geography,ZoomableGroup, Marker } from "react-simple-maps";
 import './MapChart.scss';
 import Canada from '../../canada_provinces.json';
-const geoUrl =
-  "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
+import axios from 'axios';
+import LocationItem from '../../components/LocationItem/LocationItem';
 
+const api_key="apikey=5ae2e3f221c38a28845f05b64e8e68287f5f1fa674ffcd6265b510f1"
 class MapChart extends React.Component{
    state={
       name:"",
@@ -14,10 +15,11 @@ class MapChart extends React.Component{
       position:{
          coordinates:[-79.347015,43.651070],
          zoom:3
-      }
+      },
+      markers:[]
     }
+
    callName=(data)=>{
-      console.log("name",data)
       this.setState({
          name:data.name,
          info:data.cartodb_id
@@ -30,9 +32,18 @@ class MapChart extends React.Component{
    }
 
    callClick=(data)=>{
-      console.log(data)
+      console.log("GEO DATA",data)
+      axios
+         .get(`https://api.opentripmap.com/0.1/en/places/bbox?lon_min=-82&lon_max=-79&lat_min=45&lat_max=51&kinds=geological_formations&limit=50&apikey=5ae2e3f221c38a28845f05b64e8e68287f5f1fa674ffcd6265b510f1
+         `)
+         .then(response=>{
+            console.log("RESPONSE DATA", response.data.features)
+            this.setState({
+               markers:response.data.features
+            })
+         })
    }
-
+   
    render(){
       return(
          <main className="map">
@@ -59,9 +70,16 @@ class MapChart extends React.Component{
                               />)
                         }
                      </Geographies>
+                     
                      <Marker coordinates={[this.state.longitude,this.state.latitude]}>
                         <circle r={2} fill="#DFCDC3" />
                      </Marker>
+
+                     {this.state.markers.map(mark=>{
+                        return <Marker coordinates={[mark.geometry.coordinates[0],mark.geometry.coordinates[1]]} key={mark.id}>
+                           <circle r={1} fill="#black" />
+                        </Marker>
+                     })}
                   </ZoomableGroup>
                </ComposableMap>
             </div>
@@ -69,9 +87,10 @@ class MapChart extends React.Component{
                <h1>
                   {this.state.name}
                </h1>
-               <p>
-                  {this.state.info}
-               </p>
+               {this.state.markers.map(place=>{
+                  return <LocationItem/>
+               })}
+               
             </aside>
        </main>
       )
