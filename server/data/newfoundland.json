@@ -1,0 +1,52 @@
+[
+   {
+      "id": "NL-1",
+      "name": "Gros Morne National Park ",
+      "description": " ",
+      "image":" https://www.planetware.com/photos-large/CDN/canada-newfoundland-gros-morne.jpg",
+      "province": "Newfoundland and Labrador",
+      "country": "Canada",
+      "longitude": -57.736163722,
+      "latitude":	49.686997252
+    },
+    {
+      "id": "NL-2",
+      "name": " Cape Spear Lighthouse National Historic Site ",
+      "description": "Cape Spear Lighthouse National Historic Site, 11 kilometers south of St. John's, is the most easterly point in North America, and has Newfoundland's oldest lighthouse. It is a popular, if chilly, spot to watch the sunrise as well as sight whales, seabirds, and icebergs. Dating from 1835, the light station was in operation until 1955 and is now an interesting museum. In addition, there are massive half-ruined gun emplacements from the Second World War, including the barrels of two guns each weighing 30 tons and having a range of 13 kilometers. ",
+      "image":" https://www.planetware.com/photos-large/CDN/canada-newfoundland-cape-spear.jpg",
+      "province": "Newfoundland and Labrador",
+      "country": "Canada",
+      "longitude":-52.623913,
+      "latitude":		47.523636
+    },
+    {
+      "id": "NL-3",
+      "name": "Twillingate and Fogo Island ",
+      "description": "The traditional Newfoundland fishing village of Twillingate is located on the northern coast, known as the Kittiwake coast, and it is a good place to experience local village life. Twillingate was originally settled in 1738 and known as Toulinguet. Near Twillingate is the Long Point Lighthouse, built in 1889. It has a range of 40 kilometers and is an excellent location to watch for whales and icebergs. Small museums and seafood restaurants make the community an interesting stop for tourists; don't miss the Twillingate Museum & Crafts Shop for a selection of local art and handwork.",
+      "image":" https://www.planetware.com/photos-large/CDN/canada-newfoundland-twillingate.jpg",
+      "province": "Newfoundland and Labrador",
+      "country": "Canada",
+      "longitude":-54.739497042,
+      "latitude":	49.63999744 
+    },
+    {
+      "id": "NL-4",
+      "name": "Castle Hill National Historic Site ",
+      "description": "Castle Hill National Historic Site is between Highway 100 and Placentia, where one of the two ferry routes to Nova Scotia begins and ends. It is the site of historic English and French fortifications, and an interpretive center. The French founded the colony of Plaisance in 1662 and built Fort Royal in 1693. But only 20 years later they handed over the strategic location to the British, who renamed it Castle Hill. There is a magnificent view over Placentia Bay. ",
+      "image":" https://www.planetware.com/photos-large/CDN/canada-newfoundland-castle-hill.jpg",
+      "province": "Newfoundland and Labrador",
+      "country": "Canada",
+      "longitude": -54.255332312,
+      "latitude":47.250498998
+    },
+    {
+      "id": "NL-5",
+      "name": " Terra Nova National Park",
+      "description": "Terra Nova National Park is known for its fjords and quiet coastline. In spring, icebergs drift by, and in summer, kayakers and canoeists take to the waters, while families fill the park campgrounds. Winter offers cross-country skiing opportunities. Just north of the national park, Salvage is a small fishing community with the classic Newfoundland charm of waterfront fishing sheds, tilting wharves, and rocky headlands",
+      "image":" https://www.planetware.com/photos-large/CDN/canada-newfoundland-terra-nova.jpg",
+      "province": "Newfoundland and Labrador",
+      "country": "Canada",
+      "longitude":	-53.882446,
+      "latitude":	48.528427
+    }
+]

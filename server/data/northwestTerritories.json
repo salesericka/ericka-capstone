@@ -1,0 +1,52 @@
+[
+   {
+      "id": "NT-1",
+      "name": "Nahanni National Park Reserve",
+      "description": "The remote Nahanni National Park Reserve is one of the treasures of northern Canada. Here the raging Nahanni River flows through the stunning canyon scenery of the Mackenzie Mountains, challenging experienced canoeists. The South Nahanni River also tumbles over the 90-meter precipice of spectacular Virginia Falls, creating one of the most impressive waterfalls in Canada. ",
+      "image":" https://www.planetware.com/photos-large/CDN/canada-nwt-nahanni-national-park.jpg",
+      "province": "Northwest Territories",
+      "country": "Canada",
+      "longitude": -123.32813,
+      "latitude":	61.05308
+    },
+    {
+      "id": "NT-2",
+      "name": "Yellowknife ",
+      "description": "Yellowknife, capital of the Northwest Territories, grew up around a 1930s gold rush. While all of the miners tents of Old Town have long since been replaced, there is now a mix of wooden heritage buildings, arts and cultural institutions like the Prince of Wales Northern Heritage Centre, and a bustling community life fueled by the mining industry. Some of the popular things to do are the boat tours and houseboats of Great Slave Lake. Other attractions are the impressive falls at Hidden Lake Territorial Park and the stunning Aurora Borealis viewing that can be enjoyed here.",
+      "image":"https://www.planetware.com/photos-large/CDN/canada-nwt-yellowknife.jpg ",
+      "province": "Northwest Territories",
+      "country": "Canada",
+      "longitude":	-114.371788,
+      "latitude":62.453972
+    },
+    {
+      "id": "NT-3",
+      "name": "Hay River",
+      "description": "On the southern bank of Great Slave Lake, Hay River is the southernmost port on the Mackenzie River System. Here, freight (mainly building materials and fuel) destined for settlements along the Mackenzie River and in the Arctic is transferred to barges. During the four- to five-month summer season, the port is chock-a-block with barges, fishing boats, and coast guard launches.",
+      "image":"https://www.planetware.com/wpimages/2019/07/canada-northwest-territories-top-attractions-hay-river-alexandra-falls.jpg ",
+      "province": "Northwest Territories",
+      "country": "Canada",
+      "longitude": -115.79993,
+      "latitude":	60.81555
+    },
+    {
+      "id": "NT-4",
+      "name": " The Northwest Passage",
+      "description": "The Northwest Passage provides waterway access from the Atlantic Ocean through the Arctic to the Pacific Ocean. Exploration of the passage began in the 16th century and lead to the discovery of oil. The search for the Northwest Passage began in the 16th century by Dutch and English navigators who hoped to find a favorable sea route for trade with the Far East and thus circumvent the Portuguese monopoly on trade round the Horn of Africa. ",
+      "image":" https://www.planetware.com/wpimages/2019/07/canada-northwest-territories-top-attractions-northwest-passage.jpg",
+      "province": "Northwest Territories",
+      "country": "Canada",
+      "longitude":-127.5333,
+      "latitude":70.6000
+    },
+    {
+      "id": "NT-5",
+      "name": "Banks Island ",
+      "description": "Banks Island possesses rich tundra vegetation and is home to many animals, especially the more than 65,000 musk-oxen (Ovibus moschatus), the largest population anywhere in the world. The southwestern part of Banks Island, equal to about one-third of the whole land mass, is a bird sanctuary. ",
+      "image":" https://www.planetware.com/wpimages/2019/07/canada-northwest-territories-top-attractions-banks-island.jpg",
+      "province": "Northwest Territories",
+      "country": "Canada",
+      "longitude":-121.499998,
+      "latitude":	73.0 
+    }
+]

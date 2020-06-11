@@ -1,0 +1,52 @@
+[
+   {
+      "id": "NS-1",
+      "name": "Cabot Trail ",
+      "description": "A 300-kilometer scenic drive rings the northwest coast of Cape Breton Island and Cape Breton Highlands National Park. It is a coastal route, where the highest mountains in Nova Scotia dramatically meet the Gulf of St. Lawrence. Cliffs, beaches, viewpoints, and a twisting road give countless photo opportunities, and this is a very popular motorcycle tour route.",
+      "image":"https://www.planetware.com/wpimages/2018/12/canada-nova-scotia-attractions-cabot-trail.jpg ",
+      "province": "Nova Scotia",
+      "country": "Canada",
+      "longitude":-60.746113,
+      "latitude":	46.486942
+    },
+    {
+      "id": "NS-2",
+      "name": "Peggy's Cove ",
+      "description": "About 43 kilometers southwest of Halifax, the fishing village of Peggy's Cove has a back-in-time feel. Peggy's Point Lighthouse, one of Canada's most photographed lighthouses, sits on the foggy Atlantic Coast marking a perilous point. Stark, wave-battered granite bluffs surround the lighthouse, and tourists should exercise extreme caution if exploring the rocky shoreline. Fishing wharves and boathouses line the shore of this active fishing community, and colorful heritage homes and art galleries line the winding road. ",
+      "image":"https://www.planetware.com/photos-large/CDN/canada-nova-scotia-peggys-cove.jpg ",
+      "province": "Nova Scotia",
+      "country": "Canada",
+      "longitude": -63.917162998,
+      "latitude":	44.488998044
+    },
+    {
+      "id": "NS-3",
+      "name": "Cape Breton Highlands National Park ",
+      "description": "The highest peaks in Nova Scotia are in Cape Breton Highlands National Park, which covers more than 950 square kilometers at the northern tip of Cape Breton Island. Both the coastline of beaches and cliffs and the inland forests and rivers tempt hikers, campers, and families to explore the park. Wildlife watching is excellent in the national park, with moose, beaver, eagles, and deer often visible from the Cabot Trail scenic drive, which partially cuts through the park. ",
+      "image":" https://www.planetware.com/wpimages/2018/12/canada-nova-scotia-attractions-cape-breton-highlands-national-park.jpg",
+      "province": "Nova Scotia",
+      "country": "Canada",
+      "longitude":-60.650977,
+      "latitude":	46.738285
+    },
+    {
+      "id": "NS-4",
+      "name": "Halifax Harbour ",
+      "description": "A boardwalk lines the Halifax Harbour, leading from Pier 21 Museum and the Halifax Seaport Farmers Market in the south along to the Maritime Museum of the Atlantic and restaurants. Tugs, sailboats, and navy vessels come and go, and the views look out to Dartmouth across the harbor and Georges Island mid-channel. ",
+      "image":" https://www.planetware.com/wpimages/2018/12/canada-nova-scotia-attractions-halifax-harbour.jpg",
+      "province": "Nova Scotia",
+      "country": "Canada",
+      "longitude":-63.5500,
+      "latitude":44.6167
+    },
+    {
+      "id": "NS-5",
+      "name": "Lunenburg ",
+      "description": "Brightly colored heritage buildings dot the hilly Lunenburg townscape, nearly three-quarters of which are the original structures from the 18th and 19th centuries. Many of these have been turned into inns and bed-and-breakfasts, and the community is a UNESCO World Heritage Site.",
+      "image":" https://www.planetware.com/photos-large/CDN/canada-nova-scotia-attraction.jpg",
+      "province": "Nova Scotia",
+      "country": "Canada",
+      "longitude": -64.317998728,
+      "latitude":	44.372831842
+    }
+]

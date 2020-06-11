@@ -1,0 +1,52 @@
+[
+   {
+      "id": "YT-1",
+      "name": "The Northern Lights ",
+      "description": "If you're able to time your visit to Whitehorse for the months of January through to early April, you won't even have to leave the city to witness the spectacular Aurora Borealis, or Northern Lights. That said, for optimal viewing of this remarkable cosmic display, it's best to try to leave the city lights behind you and head for the hills. ",
+      "image":"https://www.planetware.com/wpimages/2019/07/canada-whitehorse-top-attractions-the-northern-lights.jpg ",
+      "province": "Yukon",
+      "country": "Canada",
+      "longitude":-135.056839,
+      "latitude":		60.721188
+    },
+    {
+      "id": "YT-2",
+      "name": "Takhini Hot Springs",
+      "description": "Located just a short drive from downtown Whitehorse, the Takhini Hot Springs are worth visiting and are a popular attraction for visitors and locals alike. Known for their therapeutic and curative traits—as well as being odorless—the hot springs have been used by humans for centuries. ",
+      "image":" https://www.planetware.com/wpimages/2019/07/canada-whitehorse-top-attractions-takhini-hot-springs.jpg",
+      "province": "Yukon",
+      "country": "Canada",
+      "longitude":-135.358272,
+      "latitude":	60.878969
+    },
+    {
+      "id": "YT-3",
+      "name": " SS Klondike National Historic Site",
+      "description": "The sternwheelers on the Yukon River remained the region's most important mode of transport for decades after the gold-rush. It was not until 1955 that the SS Klondike II, built in 1936 from the original's engines, boiler, and other parts in 1937 after it sank, gave up carrying ore from the silver mines in Mayo to Whitehorse for onward shipment by road. Today, the restored and refitted paddle steamer is a popular tourist attraction, welcoming visitors on the Yukon embankment in the town center. Self-guided tour booklets are available. ",
+      "image":" https://www.planetware.com/photos-large/CDN/canada-whitehorse-ss-klondike.jpg",
+      "province": "Yukon",
+      "country": "Canada",
+      "longitude": -135.0478,
+      "latitude":	60.7134
+    },
+    {
+      "id": "YT-4",
+      "name": "Miles Canyon ",
+      "description": "Miles Canyon was once a treacherous portion of the Yukon River before a hydroelectric dam tamed the waters. Located where the river cut through a section of basalt rock, the rapids were a choke point for gold prospectors, and many supplies and lives were lost trying to pass the turbulent waters, a problem only solved after the building of a section of railroad that bypassed it. ",
+      "image":" https://www.planetware.com/photos-large/CDN/canada-whitehorse-miles-canyon.jpg",
+      "province": "Yukon",
+      "country": "Canada",
+      "longitude":-135.056839,
+      "latitude":60.721188
+    },
+    {
+      "id": "YT-5",
+      "name": "Yukon Wildlife Preserve",
+      "description": "At the Yukon Wildlife Preserve just 30 minutes' drive from downtown Whitehorse, visitors can take a guided tour to see some of the many wonderful creatures that call the region home, including moose, muskoxen, mountain goats, wood bison, mule deer, woodland caribou, elk, and two species of thinhorn sheep (Dall's and stone's sheep). ",
+      "image":" https://www.planetware.com/photos-large/CDN/canada-whitehorse-yukon-wildlife.jpg",
+      "province": "Yukon",
+      "country": "Canada",
+      "longitude":-135.338283,
+      "latitude":	60.871533
+    }
+]

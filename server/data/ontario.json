@@ -1,0 +1,52 @@
+[
+   {
+      "id": "ON-1",
+      "name": "Niagara Falls",
+      "description": "Niagara Falls is Canada's most internationally recognized attraction, visited by millions of tourists each year. While there are actually three sets of falls, the largest section, known as Horseshoe Falls, drops approximately 57 meters, creating a great wall of water that stretches between Niagara Falls, Canada and Niagara Falls, USA. The falls are famous primarily for the large volume of water flowing over them, but combined with the huge drop, they are truly a magnificent sight.",
+      "image":"https://www.planetware.com/photos-large/CDN/canada-ontario-niagara-falls-3.jpg",
+      "province": "Ontario",
+      "country": "Canada",
+      "longitude":-79.106667,
+      "latitude":43.060001
+    },
+    {
+      "id": "ON-2",
+      "name": "CN Tower",
+      "description": "The CN Tower is one of Canada's most iconic structures, standing tall along the Toronto skyline. The 553-meter tower is lit up at night and can be seen from all over the city and surroundings at any time of day or night, but visitors will likely want to take a trip up the tower to fully experience it.",
+      "image":"https://www.planetware.com/photos-large/CDN/canada-ontario-toronto-CN-tower-3.jpg",
+      "province": "Ontario",
+      "country": "Canada",
+      "longitude":-79.387054,
+      "latitude":43.642567
+    },
+    {
+      "id": "ON-3",
+      "name": "Parliament Hill",
+      "description": "Parliament Hill in the nation's capital is where most visitors begin their tour of Ottawa. The buildings reside in a lovely setting on a rise above the Ottawa River. The Peace Tower is the most obvious and the most photographed structure, standing more than 90 meters high between the Senate and the House of Commons",
+      "image":"https://www.planetware.com/photos-large/CDN/canada-ontario-ottawa-parliament-hill-2.jpg",
+      "province": "Ontario",
+      "country": "Canada",
+      "longitude":-75.699234,
+      "latitude":45.424807
+    },
+    {
+      "id": "ON-4",
+      "name": "Thousand Islands",
+      "description": "Spread over an 80-kilometer stretch of the St. Lawrence River is a scenic natural area known as the Thousand Islands. The islands are on a granite shelf extending from the Canadian Shield to the Adirondack Mountains in the United States, with the US-Canada boundary actually running between the islands. It is one of the oldest and best-known holiday areas in Ontario, popular with cottagers, boaters, and those looking to get away from the cities of Southern Ontario during the hot summer months",
+      "image":"https://www.planetware.com/photos-large/CDN/canada-ontario-thousand-islands.jpg",
+      "province": "Ontario",
+      "country": "Canada",
+      "longitude":-75.9902,
+      "latitude":44.3337
+    },
+    {
+      "id": "ON-5",
+      "name": "Algonquin Park",
+      "description": "Algonquin Provincial Park is a very wide natural preserve located in Nipissing District, the state of Ontario, Canada. It covers a really large territory covered with wonderful thick forests, numerous lakes, streams and small rivers, and a great variety of outdoor activities for all kinds of tourists. Hiking, fishing, canoeing, boating, horseback riding, mountain biking, or simply staying in the shadow of old trees are just a small list of what one can do while visiting this amazing natural park.",
+      "image":"https://www.planetware.com/photos-large/CDN/canada-ontario-parks-sunrise-killarney.jpg",
+      "province": "Ontario",
+      "country": "Canada",
+      "longitude":-78.378761,
+      "latitude":45.837559
+    }
+]

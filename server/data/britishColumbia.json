@@ -1,0 +1,55 @@
+[
+   {
+      "id": "BC-1",
+      "name": "Whistler",
+      "description": "At the foot of the Whistler and Blackcomb Mountains, Whistler is the center of the biggest winter sports area in Canada. In 2010, this world-class ski resort attracted much international attention when it hosted the downhill ski events for the Winter Olympic Games.",
+      "image":"https://www.planetware.com/photos-large/CDN/canada-british-columbia-whistler-inukshuk.jpg",
+      "province": "British Columbia",
+      "country": "Canada",
+      "longitude":-122.957359,
+      "latitude":	50.1163196
+    },
+    {
+      "id": "BC-2",
+      "name": "Yoho National Park",
+      "description": "Yoho National Park is home to some of British Columbia's most rugged and scenic mountain terrain. Snowcapped peaks, waterfalls, rivers, and crystal-clear lakes, including spectacular Lake O'Hara, draw large numbers of visitors to this park during the summer months.",
+      "image":"https://www.planetware.com/wpimages/2020/01/british-columbia-tourist-attractions-yoho-national-park-lake.jpg",
+      "province": "British Columbia",
+      "country": "Canada",
+      "longitude":-116.583333,
+      "latitude":	51.466667
+    },
+    {
+      "id": "BC-3",
+      "name": "Vancouver Island",
+      "description": "On Canada's far western coast, Vancouver Island is home to some spectacular coastal scenery, mountains, lakes, and other natural attractions, as well as lovely small towns and the provincial capital of Victoria. Coastal beaches provide year-round surfing, particularly near the popular tourist town of Tofino and nearby Pacific Rim National Park.",
+      "image":"https://www.planetware.com/photos-large/CDN/canada-british-columbia-vancouver-island.jpg",
+      "province": "British Columbia",
+      "country": "Canada",
+      "longitude":-123.116226,
+      "latitude":49.246292
+
+    },
+    {
+      "id": "BC-4",
+      "name": "Glacier National Park",
+      "description": "Glacier National Park, along with Mount Revelstoke National Park a few miles further west, is a scenic area and a favorite with climbers and hikers. The parks lie in one of Canada's most inhospitable mountainous regions, the almost inaccessible northern Selkirk Range of the Columbia Mountains.",
+      "image":"https://www.planetware.com/photos-large/CDN/canada-british-columbia-glacier-national-park-rogers-pass.jpg",
+      "province": "British Columbia",
+      "country": "Canada",
+      "longitude":-113.8070624,
+      "latitude": 48.6960847
+    },
+    {
+      "id": "BC-5",
+      "name": "Haida Gwaii",
+      "description": "Haida Gwaii is one of Canada's undiscovered treasures. These remote islands provide a wealth of culture and natural beauty, but are often overlooked by tourists. Formerly known as the Queen Charlotte Islands, Haida Gwaii is an isolated group of more than 150 islands in the Pacific Ocean at the western edge of the continental shelf. The two main islands, Graham and Moresby, are located about 50 kilometers and 150 kilometers respectively off the coast of British Columbia.",
+      "image":"https://www.planetware.com/photos-large/CDN/canada-british-columbia-queen-charlotte-islands.jpg",
+      "province": "British Columbia",
+      "country": "Canada",
+      "longitude":-129.9173,
+      "latitude":	51.9227
+
+
+    }
+]

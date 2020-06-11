@@ -1,0 +1,53 @@
+[
+   {
+      "id": "AB-1",
+      "name": "Banff National Park",
+      "description": "Banff National Park is the most visited tourist attraction in Alberta and arguably the most impressive national park in Canada. Just 130 kilometers west of Calgary, the area encompasses spectacular mountain scenery, major ski resorts, beautiful lakes, and the tourist town of Banff. Wildlife is abundant here, with grizzly bears, black bears, wolves, caribou, and elk, many of which are frequently sighted along the main highway through the park.",
+      "image":"https://www.planetware.com/photos-large/CDN/alberta-banff-national-park.jpg",
+      "province": "Alberta",
+      "country": "Canada",
+      "longitude":-115.928055,
+      "latitude":	51.496845
+    },
+    {
+      "id": "AB-2",
+      "name": "Lake Louise",
+      "description": "Lake Louise, the jewel of Banff National Park, is famous for its beautiful turquoise colored water that reflects the surrounding mountains and Victoria Glacier. Located just a short drive north of the town of Banff, the lake is an easy day trip from Calgary.",
+      "image":"https://www.planetware.com/photos-large/CDN/alberta-lake-louise.jpg",
+      "province": "Alberta",
+      "country": "Canada",
+      "longitude":-116.181717,
+      "latitude":	51.328239
+    },
+    {
+      "id": "AB-3",
+      "name": "Moraine Lake",
+      "description": "Beyond Lake Louise, at the end of a scenic 13-kilometer-long twisty mountain road, is Moraine Lake in the Valley of the Ten Peaks. Like Lake Louise, this is another scenic setting with similar turquoise water and snow-capped peaks. It was for many years the location of the image on the reverse side of the old Canadian twenty dollar bill.",
+      "image":"https://www.planetware.com/photos-large/CDN/alberta-moraine-lake.jpg",
+      "province": "Alberta",
+      "country": "Canada",
+      "longitude":-116.181717,
+      "latitude":	51.328239
+    },
+    {
+      "id": "AB-4",
+      "name": "Jasper National Park",
+      "description": "Much like Banff, the name Jasper is associated with both the national park and the town, which lies at the heart of this stunning park. Jasper is the biggest national park in Canada, covering an area of 10,878 square kilometers. It is an area of lakes, waterfalls, mountains, glaciers, and forests, but has a slightly different appearance than the parks and natural areas farther south.",
+      "image":"https://www.planetware.com/photos-large/CDN/alberta-jasper-national-park-spirit-island.jpg",
+      "province": "Alberta",
+      "country": "Canada",
+      "longitude":-117.900002,
+      "latitude":52.799999
+    },
+    {
+      "id": "AB-5",
+      "name": "West Edmonton Mall",
+      "description": "The West Edmonton Mall is more than just shops. Contained within this huge complex is the World Waterpark, the Mayfield Toyota Ice Palace ice rink, mini golf, an aquarium with live shows, a bowling alley, movie theaters, and of course, all kinds of stores and restaurants. The mall is a destination within Alberta, particularly in winter, where families can come to escape the cold and enjoy some indoor fun and shopping.",
+      "image":"https://www.planetware.com/photos-large/CDN/canada-alberta-edmonton-west-edmonton-mall-1.jpg",
+      "province": "Alberta",
+      "country": "Canada",
+      "longitude":-113.623055,
+      "latitude":	53.522778
+
+    }
+]

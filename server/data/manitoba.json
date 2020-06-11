@@ -1,0 +1,52 @@
+[
+   {
+      "id": "MB-1",
+      "name": "Polar Bears of Churchill ",
+      "description": "Churchill, popularly known as the Polar Bear Capital of the World, lies on the harsh, rocky coast of Hudson Bay. In autumn, polar bears wander onto the ice-floes in the bay to hunt seals, and the town comes to life with visitors from around the world who come here to see these amazing animals. Tours in tundra buggies - giant large-wheeled vehicles with caged windows - allow visitors close up encounters with the bears. ",
+      "image":"https://www.planetware.com/photos-large/CDN/canada-manitoba-churchill-polar-bears.jpg",
+      "province": "Manitoba",
+      "country": "Canada",
+      "longitude":-94.164963,
+      "latitude":58.768410
+    },
+    {
+      "id": "MB-2",
+      "name": "Narcisse Snake Dens ",
+      "description": "The Narcisse Snake Dens offer visitors a unique opportunity to witness a spectacle of nature each spring. In late April and early May tens of thousands of red-sided garter snakes emerge from their winter slumber and exit the dens, ready to mate. Visitors can watch the action from observation platforms near the four dens. One of the things to watch for are mating balls, which see as many as a hundred male snakes swarming a female.",
+      "image":"https://www.planetware.com/wpimages/2019/07/manitoba-tourist-attractions-narcisse-snake-dens.jpg",
+      "province": "Manitoba",
+      "country": "Canada",
+      "longitude":-97.5242595696,
+      "latitude":	50.7336720653
+    },
+    {
+      "id": "MB-3",
+      "name": "Pinawa Dam",
+      "description": "The crescent-shaped ruins of the 1906 Pinawa Dam are the central feature of this park, just a short drive north of the town of Pinawa. Set in a picturesque area of the Canadian Shield in Manitoba's cottage country, the park makes a nice day trip from Winnipeg, just 1.5 hours away.",
+      "image":"https://www.planetware.com/wpimages/2019/08/manitoba-attractions-things-to-do-pinawa-dam-provincial-park.jpg",
+      "province": "Manitoba",
+      "country": "Canada",
+      "longitude": -95.8749965,
+      "latitude":	50.142666096
+    },
+    {
+      "id": "MB-4",
+      "name": "The Forks ",
+      "description": "The Forks, located at the junction of the Red and Assiniboine Rivers near Winnipeg's downtown core, is the place to be in summer and equally fun in winter. The Forks Market and the Johnston Terminal Building are restored historical buildings housing a lovely market area with interesting shops, restaurants, and casual food stalls. Some restaurants feature outdoor patios overlooking the Riverwalk that runs along the river. In winter, the outdoor skating rink is particularly popular with families. ",
+      "image":" https://www.planetware.com/photos-large/CDN/canada-manitoba-the-forks.jpg",
+      "province": "Manitoba",
+      "country": "Canada",
+      "longitude":-97.131187,
+      "latitude":49.887379
+    },
+    {
+      "id": "MB-5",
+      "name": "Whiteshell Provincial Park",
+      "description": "About a 1.5-hour drive east of Winnipeg is the Whiteshell Provincial Park, a popular summer destination for Winnipeggers looking to get away from the heat of the city and spend some time by the lake. The landscape is typical of the Canadian Shield, with hills, lakes, valleys, forests, and rivers. Moose, deer, black bear, and other wildlife inhabit the park. Cottages dot the shorelines of many of the lakes, but much of the wilderness area is undisturbed. ",
+      "image":"https://www.planetware.com/photos-large/CDN/canada-manitoba-whiteshell-provincial-park.jpg",
+      "province": "Manitoba",
+      "country": "Canada",
+      "longitude":-95.333332,
+      "latitude":49.916663 
+    }
+]

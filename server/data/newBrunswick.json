@@ -1,0 +1,52 @@
+[
+   {
+      "id": "NB-1",
+      "name": "Hopewell Rocks",
+      "description": "The Hopewell Rocks look quite different at high and low tides. When the tide is in, they appear as tree-clad islands, which you can view from a series of platforms connected by stairs. At low tide, they become giant, deeply-eroded sea stacks towering above a rocky beach, and you can descend the stairs to the ocean floor to walk among them. Park rangers are here to answer questions and to be sure the beach is cleared before the tide comes rushing in. Interpretive signs and the visitor center displays explain the formation of these sculptured cliffs and pillars. At high tide, the best way to appreciate these rocks is to kayak among them on a guided kayak excursion with Baymount Outdoor Adventures. ",
+      "image":" https://www.planetware.com/photos-large/CDN/canada-new-brunswick-fundy-national-park.jpg",
+      "province": "New Brunswick",
+      "country": "Canada",
+      "longitude":-64.57333104,
+      "latitude":	45.82333004 
+    },
+    {
+      "id": "NB-2",
+      "name": "The Fundy Trail Parkway",
+      "description": "The Fundy Trail Parkway is a scenic coastal drive that lies northeast of Saint John. It starts near St. Martins, once a bustling shipbuilding community, and continues along the coast. It's a slow-paced route, where scenic lookouts and picnic areas provide views of coastal cliffs, isolated beaches, marine wildlife, and a Flowerpot Rock. A 10-kilometer pedestrian and bicycle trail parallels the drive, and some of the overlooks have trails to secluded cobble-strewn coves. The interpretive center at Big Salmon River has an interesting video and displays that fill in the background on the former logging community here, and old lumbering equipment is displayed at the Heritage Sawmill. Kids will like the nearby 84-meter (275-foot) suspension footbridge across Big Salmon River. ",
+      "image":"https://www.planetware.com/photos-large/CDN/canada-saint-john-st-martins.jpg ",
+      "province": "New Brunswick",
+      "country": "Canada",
+      "longitude":-64.952332,
+      "latitude":45.596832
+    },
+    {
+      "id": "NB-3",
+      "name": "Cape Enrage ",
+      "description": "A tiny lighthouse dating to 1838 sits atop rugged cliffs at Cape Enrage, providing a panoramic view over the Bay of Fundy. Though light stations are fairly typical on the Atlantic Coast, Cape Enrage also has an outdoor activity center, where enthusiasts can learn to rappel, zipline, rock climb, and kayak. On a walk along Barn Marsh Island Beach, safe only at low tide, you can see fossils that have fallen off the 40-meter cliffs that extend for four kilometers behind the beach. The fossils in the layers of sedimentary rock eroding from the cliff are about 320 million years old. ",
+      "image":"https://www.planetware.com/photos-large/CDN/canada-new-brunswick-cape-enrage.jpg ",
+      "province": "New Brunswick",
+      "country": "Canada",
+      "longitude":-64.7778,
+      "latitude":	45.6108 
+    },
+    {
+      "id": "NB-4",
+      "name": " Grand Manan Island",
+      "description": "Accessible only by ferry from Blacks Harbour, the island of Grand Manan is a tiny fishing community near the mouth of the Bay of Fundy. A road follows the sea along its 35-kilometer length, with a few side roads leading the 10 kilometers to its precipitous western shore. Birders come to spot some of the more than 240 species found here, including the Atlantic puffin, and the island is also a popular base for whale-watching and to spot other aquatic animals, including the Atlantic white-sided dolphin, harbor porpoise, and four species of seals. Artists find inspiration in its rugged cliffs, lighthouses, and fishing villages, and you'll find a number of studios and galleries on the island. ",
+      "image":"https://www.planetware.com/photos-large/CDN/canada-bay-of-fundy-grand-manan.jpg ",
+      "province": "New Brunswick",
+      "country": "Canada",
+      "longitude":-66.815773,
+      "latitude":	44.706390
+    },
+    {
+      "id": "NB-5",
+      "name": "Roosevelt Campobello International Park",
+      "description": "Campobello Island is accessible mid-June through September via ferries from mainland New Brunswick to Deer Island and on to Campobello, and by bridge year-round from Lubec, Maine. Though part of Canada, it has strong cross-border connections, including the historic Roosevelt summer estate that's the centerpiece of Roosevelt Campobello International Park. The property's main structure is a 34-room cottage, where the Roosevelts summered with their children from 1905 until 1921.",
+      "image":"https://www.planetware.com/photos-large/CDN/canada-new-brunswick-roosevelt-campobello.jpg ",
+      "province": "New Brunswick",
+      "country": "Canada",
+      "longitude":-66.919472,
+      "latitude":	44.890015
+    }
+]

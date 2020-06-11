@@ -1,0 +1,52 @@
+[
+   {
+      "id": "PE-1",
+      "name": "PEI National Park ",
+      "description": "Prince Edward Island National Park occupies much of the island's central, northern coastline. Three sections of the park offer beaches, wildlife watching, outdoor activities, historic buildings, and other attractions. Campgrounds and picnic areas cater to families and outdoor lovers. ",
+      "image":"https://www.planetware.com/photos-large/CDN/canada-pei-national-park.jpg ",
+      "province": "Prince Edward Island",
+      "country": "Canada",
+      "longitude":-63.073544,
+      "latitude":	46.415853
+    },
+    {
+      "id": "PE-2",
+      "name": "Basin Head Provincial Park",
+      "description": "This beach and provincial park on Points East Coastal Drive is an action-packed spot. Visitors delight in scuffing their feet along the sands to try and create a distinct singing noise, and the squeaky beach is nicknamed Singing Sands. The squeak is caused by the high amount of silica and quartz in the fine sand. ",
+      "image":" https://www.planetware.com/photos-large/CDN/canada-prince-edward-island-basin-head-provincial-park.jpg",
+      "province": "Prince Edward Island",
+      "country": "Canada",
+      "longitude": -62.1054829114,
+      "latitude":	46.373248507
+    },
+    {
+      "id": "PE-3",
+      "name": " Confederation Bridge ",
+      "description": "Completed in 1997, Confederation Bridge crosses the Northumberland Strait, for the first time connecting Prince Edward Island to mainland Canada and fulfilling the promise of a permanent link made when PEI joined Confederation in 1873. Prior to the bridge, the only crossing was by ferry here or at the eastern end of the island at Wood Islands. The 12.9-kilometer bridge is the world's longest over freezing water and considered one of Canada's top engineering accomplishments of the 20th century. ",
+      "image":"https://www.planetware.com/photos-large/CDN/canada-pei-confederation-bridge-1.jpg ",
+      "province": "Prince Edward Island",
+      "country": "Canada",
+      "longitude":	-63.745834,
+      "latitude":		46.215279
+    },
+    {
+      "id": "PE-4",
+      "name": "North Cape ",
+      "description": "North Cape juts upward into the Gulf of St. Lawrence like a sharp-pointed arrow, with North Cape Lighthouse at its tip. This entire western end of the island, from Cedar Dunes Provincial Park in the south to North Cape, is less visited than the rest of PEI, which gives its small towns and countryside a quiet almost undiscovered feel. Route 2 draws an arrow-straight line through its center, but the most scenic way to explore it is along the 350-kilometer North Cape Coastal Drive, a signposted route that follows the coast from one scenic outlook and tiny village to the next.  ",
+      "image":"https://www.planetware.com/photos-large/CDN/canada-prince-edward-island-north-cape.jpg ",
+      "province": "Prince Edward Island",
+      "country": "Canada",
+      "longitude": -64.0,
+      "latitude":47.0666664
+    },
+    {
+      "id": "PE-5",
+      "name": "Confederation Trail",
+      "description": "When the trains stopped running in Prince Edward Island, it opened up a new opportunity: for a 273-kilometer rolled stone dust trail that crossed the island from end to end. Side trails increase the network's total length to 435 kilometers. The main trail runs from Tignish in the northwest to Elmira in the east. Smaller trails branch to Charlottetown, Wood Islands, Souris, Georgetown, Montague, Murray River, and the Confederation Bridge in Borden-Carleton.",
+      "image":"https://www.planetware.com/photos-large/CDN/canada-prince-edward-island-confederation-trail-bridge.jpg ",
+      "province": "Prince Edward Island",
+      "country": "Canada",
+      "longitude":-63.000000,
+      "latitude":46.250000
+    }
+]

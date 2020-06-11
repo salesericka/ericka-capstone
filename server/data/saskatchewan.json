@@ -1,0 +1,52 @@
+[
+   {
+      "id": "SK-1",
+      "name": "Prince Albert National Park",
+      "description": "Prince Albert National Park is a gently undulating landscape of spruce bogs, large lakes, and aspen-dotted uplands. First Nations people have lived here for thousands of years, and there is archaeological evidence that in severe winters, tribes from the prairies moved north to these sheltered woodlands, intermingling with the people who lived here. ",
+      "image":"https://www.planetware.com/photos-large/CDN/canada-saskatchewan-prince-albert-park.jpg",
+      "province": "Saskatchewan",
+      "country": "Canada",
+      "longitude":-105.749997,
+      "latitude":	53.1999992 
+    },
+    {
+      "id": "SK-2",
+      "name": "Saskatoon ",
+      "description": "Sunny Saskatoon is a pleasant city in the South Saskatchewan River. Many tourist attractions explore the local heritage, from the first Prairies people at the Wanuskewin Heritage Park to European settlers and culture at the Ukrainian Museum of Canada. The largest of the province's four Western Development Museums is located in the city and features a vibrant reconstructed main street known as Boomtown 1910.",
+      "image":"https://www.planetware.com/photos-large/CDN/canada-saskatchewan-ukrainian.jpg ",
+      "province": "Saskatchewan",
+      "country": "Canada",
+      "longitude":-106.647034,
+      "latitude":		52.146973
+    },
+    {
+      "id": "SK-3",
+      "name": "Regina",
+      "description": "A cosmopolitan commercial and cultural center, Regina is the setting for many government and provincial institutions, some of which, like the Saskatchewan Legislative Building, can be visited. It enjoys economic prosperity, and boasts a number of arts and heritage attractions, including the illuminating Royal Saskatchewan Museum and Mackenzie Art Gallery near the parklands of Wascana Centre around Wascana Lake. ",
+      "image":"https://www.planetware.com/photos-large/CDN/canada-saskatchewan-regina.jpg ",
+      "province": "Saskatchewan",
+      "country": "Canada",
+      "longitude":-104.618896,
+      "latitude":	50.445210
+    },
+    {
+      "id": "SK-4",
+      "name": "Qu'Appelle Valley",
+      "description": "Extending along the Qu'Appelle River is a beautiful, steep-sided valley, carved out of the gently undulating prairie by glacial waters. It is a rich garden-style landscape with eight lakes strung out along the valley, from Buffalo Pound (where there is a provincial park) in the west, to Echo Valley Provincial Park near Fort Qu'Appelle and Round and Crooked Lake farther east. There are also several scenic parks and little townships along this lovely stretch that are worth exploring.",
+      "image":"https://www.planetware.com/photos-large/CDN/canada-saskatchewan-qu-appelle-valley.jpg ",
+      "province": "Saskatchewan",
+      "country": "Canada",
+      "longitude":-104.749997,
+      "latitude":50.5499978
+    },
+    {
+      "id": "SK-5",
+      "name": "Fort Carlton Provincial Park",
+      "description": "Fort Carlton was originally established as an outpost of the Hudson's Bay Company in 1795 to provide river patrols and provisions for fur traders, and remained in use until 1885. Rebuilt on the foundations of the third and final site on which the fort stood, the present rendition, while a replica of the original (it was built in 1967), offers a fascinating look at life during this period. Visitors can take a canoe tour in summer, or wander the grounds to see the reconstructed fort, a Cree village, displays of hides, and various supplies.",
+      "image":"https://www.planetware.com/photos-large/CDN/canada-saskatchewan-fort-carlton.jpg ",
+      "province": "Saskatchewan",
+      "country": "Canada",
+      "longitude":-106.49,
+      "latitude":52.821 
+    }
+]

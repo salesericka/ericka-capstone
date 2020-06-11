@@ -1,0 +1,53 @@
+[
+   {
+      "id": "QB-1",
+      "name": "Iles de la Madeleine",
+      "description": "In the Gulf of St. Lawrence, the sand dunes and beaches of the Îles de la Madeleine archipelago are an idyllic and lively spot in summertime. About 90 kilometers of thread-like sand dunes connect six of the twelve islands in the Îles de la Madeleine archipelago. The islands are ideal for water sports, bird-watchers, and anyone who enjoys long walks in the dunes; the best time for a visit is in August.",
+      "image":"https://www.planetware.com/wpimages/2018/12/canada-quebec-attractions-iles-de-la-madeleine.jpg",
+      "province": "Quebec",
+      "country": "Canada",
+      "longitude": -61.866672,
+      "latitude":	47.383338
+    },
+    {
+      "id": "QB-2",
+      "name": "Montreal Botanical Gardens (Jardin Botanique)",
+      "description": "The lush and lovely Botanical Gardens cover 75 hectares adjacent to the Olympic stadium in Montréal's Parc Maisonneuve. The facility is home to both outdoor and greenhouse gardens, many of which are centered around a particular culture. Among the 20 outdoor gardens are the Chinese Garden, Japanese Garden, and First Nations Garden, each of which celebrates the traditions of their respective culture.",
+      "image":"https://www.planetware.com/photos-large/CDN/canada-montreal-botanical-garden.jpg",
+      "province": "Quebec",
+      "country": "Canada",
+      "longitude":-73.554081117,
+      "latitude":	45.554331116
+    },
+    {
+      "id": "QB-3",
+      "name": "Mont Tremblant",
+      "description": "Ski resorts in the Canadian Laurentians are favorite winter destinations, and chief among them is Mont Tremblant — the highest peak in the Laurentians (960 meters), located about 150 kilometers north of Montréal. Good dining, entertainment, and ample accommodations define the resort community, which is housed in a quaint pedestrian village. The region is also a fall destination, when leaves turn autumn shades of orange, red, and gold.",
+      "image":"https://www.planetware.com/wpimages/2018/12/canada-quebec-attractions-mont-tremblant.jpg",
+      "province": "Quebec",
+      "country": "Canada",
+      "longitude":-74.599998,
+      "latitude":46.116669
+    },
+    {
+      "id": "QB-4",
+      "name": "Notre-Dame Basilica",
+      "description": "The regal-looking Notre-Dame Basilica is one of the most visited tourist attractions in Old Montréal and the city's oldest church. Its twin towers and neo-Gothic façade stand above Place d'Armes, and the interior was designed by Victor Bourgeau. The church was founded in 1656, and the impressive present-day structure was built in 1829. Inside, the stained-glass windows and ornate wood carvings are a majestic sight.",
+      "image":"https://www.planetware.com/photos-large/CDN/canada-montreal-notre-dame.jpg",
+      "province": "Quebec",
+      "country": "Canada",
+      "longitude":-73.5537561183,
+      "latitude":	45.5026896559 
+    },
+    {
+      "id": "QB-5",
+      "name": "Chutes Montmorency",
+      "description": "Just northeast of Québec City, the wide sweeping waterfall of Chutes Montmorency cascades down an 84-meter escarpment. The falls are higher than Niagara Falls, and a narrow pedestrian suspension bridge crosses the Montmorency River to île d'Orléans, enabling you to watch the water rush over the edge right beneath your feet. There is also a cable car, which travels to the top of the falls and provides great views of the surrounding landscape, and the Montmorency Manor houses an interpretive center and a restaurant. Visitors can also enjoy views of the falls from the numerous trails, stairways, and viewing platforms, and there are several picnic areas.",
+      "image":"https://www.planetware.com/photos-large/CDN/canada-quebec-chutes-montmorency-2.jpg",
+      "province": "Quebec",
+      "country": "Canada",
+      "longitude":-71.147684,
+      "latitude":	46.890804
+
+    }
+]
