@@ -5,26 +5,20 @@ import Canada from '../../canada_provinces.json';
 import axios from 'axios';
 import LocationItem from '../../components/LocationItem/LocationItem';
 
+const API_URL = process.env.REACT_APP_API_URL;
+
 const api_key="apikey=5ae2e3f221c38a28845f05b64e8e68287f5f1fa674ffcd6265b510f1"
 class MapChart extends React.Component{
    state={
-      name:"",
-      info:"",
       longitude:-79.347015,
       latitude:43.651070,
       position:{
          coordinates:[-79.347015,43.651070],
          zoom:3
       },
-      markers:[]
+      places:[]
     }
 
-   callName=(data)=>{
-      this.setState({
-         name:data.name,
-         info:data.cartodb_id
-      })
-   }
    handleMoveEnd=(position)=>{
       this.setState({
          position:position
@@ -33,17 +27,17 @@ class MapChart extends React.Component{
 
    callClick=(data)=>{
       console.log("GEO DATA",data)
+      let newData = data.replace(/ +/g, '')
       axios
-         .get(`https://api.opentripmap.com/0.1/en/places/bbox?lon_min=-82&lon_max=-79&lat_min=45&lat_max=51&kinds=geological_formations&limit=50&apikey=5ae2e3f221c38a28845f05b64e8e68287f5f1fa674ffcd6265b510f1
-         `)
+         .get(API_URL + "/" + newData)
          .then(response=>{
-            console.log("RESPONSE DATA", response.data.features)
+            console.log("RESPONSE DATA", response.data)
             this.setState({
-               markers:response.data.features
+               places:response.data
             })
          })
    }
-   
+
    render(){
       return(
          <main className="map">
@@ -55,8 +49,7 @@ class MapChart extends React.Component{
                            geographies.map(geo => <Geography 
                               key={geo.rsmKey} 
                               geography={geo} 
-                              onMouseDown={()=>this.callClick(geo)}
-                              onMouseEnter={()=>this.callName(geo.properties)}
+                              onClick={()=>this.callClick(geo.properties.name)}
                               style={
                                  {
                                     default:{
@@ -67,7 +60,7 @@ class MapChart extends React.Component{
                                     }
                                  }
                               }
-                              />)
+                           />)
                         }
                      </Geographies>
                      
@@ -75,8 +68,8 @@ class MapChart extends React.Component{
                         <circle r={2} fill="#DFCDC3" />
                      </Marker>
 
-                     {this.state.markers.map(mark=>{
-                        return <Marker coordinates={[mark.geometry.coordinates[0],mark.geometry.coordinates[1]]} key={mark.id}>
+                     {this.state.places.map(mark=>{
+                        return <Marker coordinates={[mark.longitude,mark.latitude]} key={mark.id}>
                            <circle r={1} fill="#black" />
                         </Marker>
                      })}
@@ -85,12 +78,17 @@ class MapChart extends React.Component{
             </div>
             <aside className="map__information">
                <h1>
-                  {this.state.name}
+                  Places To Visit
                </h1>
-               {this.state.markers.map(place=>{
-                  return <LocationItem/>
+               {this.state.places.map(place=>{
+                  return <LocationItem
+                     key={place.id}
+                     name={place.name}
+                     description={place.description}
+                     image={place.image}
+                     id={place.id}
+                  />
                })}
-               
             </aside>
        </main>
       )
@@ -98,3 +96,4 @@ class MapChart extends React.Component{
 }
 
 export default MapChart;
+export {API_URL};

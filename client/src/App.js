@@ -4,7 +4,6 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import HomePage from './pages/HomePage/HomePage';
 import Header from './components/Header/Header';
 import LocationPage from './pages/LocationPage/LocationPage';
-import MapBox from './pages/LocationPage/MapBox';
 class App extends React.Component {
 
   render(){
@@ -14,7 +13,6 @@ class App extends React.Component {
         <Switch>
           <Route path="/" exact component={HomePage}/>
           <Route path="/location" component={LocationPage}/>
-          {/* <Route path="/location" component={MapBox}/> */}
         </Switch>
       </BrowserRouter>
     );

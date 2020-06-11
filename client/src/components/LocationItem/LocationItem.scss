@@ -1,0 +1,15 @@
+.location__item{
+   padding:1rem;
+   &__image-wrapper{
+      width:100px;
+      height:150px;
+      object-fit: contain;
+
+   }
+}
+.location__image-wrapper{
+   width:100px;
+   height:150px;
+   object-fit: contain;
+   object-position: center;
+}
