@@ -1,0 +1,25 @@
+@import "../../partials/variables";
+
+.fave-card{
+   width:30%;
+   border-radius: 10px;
+   background-color:#d6dcdc ;
+   display:flex;
+   flex-direction: column;
+   margin:1rem 1rem 0 0;
+
+   &__info-wrapper{
+      padding:1rem;
+   }
+
+   &__image{
+      width:100%;
+      border-radius: 10px 10px 0 0 ;
+   }
+   &__button{
+      margin-top:1rem;
+      padding:0.5rem;
+      border:none;
+      border-radius:10px;
+   }
+}

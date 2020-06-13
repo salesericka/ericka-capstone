@@ -1,0 +1,12 @@
+@import '../../partials/variables';
+
+.user-page{
+   padding:1rem;
+
+   &__list{
+      justify-content: space-between;
+      display:flex;
+      flex-wrap: wrap;
+      width:50%;
+   }
+}

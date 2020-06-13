@@ -27,6 +27,19 @@ class UserPage extends React.Component{
       })
    }
 
+   callDelete=(id)=>{
+      axios
+         .delete(`${API_URL}/userBucketList/${id}`)
+         .then(response=>{
+            this.setState({
+               userList:response.data
+            })
+         })
+         .catch(err=>{
+            console.log(err)
+         })
+   }
+
    showList=()=>{
       const userListData = this.state.userList.map(picked=>{
          return (
@@ -37,7 +50,8 @@ class UserPage extends React.Component{
                description={picked.description}
                id={picked.id}
                province={picked.province}
-               country={picked.country}  
+               country={picked.country}
+               callDelete={this.callDelete}
             />
          )
       })
