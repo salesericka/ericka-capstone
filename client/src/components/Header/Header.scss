@@ -2,7 +2,7 @@
 
 .header{
    width: 100%;
-   background-color:$light-g;
+   background-color:$lighter-g;
    padding:1rem 0;
    box-shadow: 2px 3px 5px#000000b1;
    &__nav{
@@ -10,6 +10,7 @@
       padding:0 1rem;
       width:100%;
       box-sizing: border-box;
+      align-items: center;
    }
 
 }

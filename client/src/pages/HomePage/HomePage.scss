@@ -1,0 +1,23 @@
+@import '../../partials/variables';
+
+.home{
+   width:100%;
+   height:100vh;
+   background-image: url('../../assets/homeImage.jpg');
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   filter: grayscale(0.25);
+
+   &__start{
+      font-size: 100px;
+      color:$light-text;
+      opacity:70%;
+      &:hover{
+         color:$light-p;
+      }
+   }
+}
