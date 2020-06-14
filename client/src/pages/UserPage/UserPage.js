@@ -62,6 +62,7 @@ class UserPage extends React.Component{
    render(){
       return(
          <main className="user-page" >
+            
             <ul className="user-page__bucket-list">
                {this.showList()}
             </ul>
