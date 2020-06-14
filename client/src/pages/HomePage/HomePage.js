@@ -1,6 +1,5 @@
 import React from 'react';
 import './HomePage.scss';
-import ReactTooltip from 'react-tooltip';
 import {Link} from 'react-router-dom';
 
 function HomePage(){

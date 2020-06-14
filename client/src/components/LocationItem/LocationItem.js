@@ -42,7 +42,7 @@ class LocationItem extends React.Component {
             {this.props.name}
         </h3> 
 
-        <img className="location__image" src={this.props.image} alt="image"/>
+        <img className="location__image" src={this.props.image} alt="location"/>
 
 
           <Modal
@@ -54,6 +54,7 @@ class LocationItem extends React.Component {
               <img className="modal__icon-close" 
                 src={close} 
                 onClick={this.handleModal}
+                alt="icon close"
                 data-tip="Close"
               />
               <h2 className="modal__name">
@@ -68,7 +69,7 @@ class LocationItem extends React.Component {
               <div className="modal__image-wrapper">
                 <img className="modal__image" 
                   src={this.props.image} 
-                  alt="image" 
+                  alt="location" 
                 />  
               </div>
               <p className="modal__description">

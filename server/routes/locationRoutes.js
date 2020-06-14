@@ -14,7 +14,6 @@ const NovaScotia =require('../data/novaScotia.json');
 const NewfoundlandandLabrador =require('../data/newfoundland.json');
 const NewBrunswick =require('../data/newBrunswick.json');
 const PrinceEdwardIsland =require('../data/princeEdwardIsland.json');
-const userBucketList = require('../data/userBucketList.json');
 
 router.get('/canada',(req,res)=>{
    res.status(200).json(canada_province)
@@ -70,26 +69,6 @@ router.get('/NewBrunswick',(req,res)=>{
 
 router.get('/PrinceEdwardIsland',(req,res)=>{
    res.status(200).json(PrinceEdwardIsland)
-})
-
-router.get('/userBucketList',(req,res)=>{
-   res.status(200).json(userBucketList)
-})
-
-router.post('/userBucketList',(req,res)=>{
-   const data = req.body;
-   if(userBucketList.find(info=>{return info.id === data.id})){
-   res.status(401).send("it already exist")
-   }else{ userBucketList.push(req.body);
-   res.status(201).json(userBucketList)}
-})
-
-router.delete('/userBucketList/:listId', (req,res)=>{
-   if(userBucketList.find(fave=>{return fave.id === req.params.listId})){
-      let index = userBucketList.findIndex(item=> item.id === req.params.listId)
-      userBucketList.splice(index,1)
-      res.status(200).json(userBucketList)
-   }else{res.status(401).send("Can't Find")}
 })
 
 module.exports = router;

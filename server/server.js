@@ -2,14 +2,16 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 8080;
 const cors = require('cors');
-const routes = require('./routes/routes')
+const locationRoutes = require('./routes/locationRoutes')
+const userRoutes = require('./routes/userRoutes');
 require('dotenv').config();
 
 app.use(cors());
 
 app.use(express.json());
 
-app.use('/', routes)
+app.use('/', locationRoutes);
+app.use('/userBucketList', userRoutes);
 
 app.use((req, res, next) => {
    if (

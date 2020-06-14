@@ -8,7 +8,7 @@ const API_URL = process.env.REACT_APP_API_URL;
 
 class UserPage extends React.Component{
    state={
-      userList:[]
+      userList:[],
    }
    componentDidMount(){
       this.fetchList();
@@ -50,6 +50,7 @@ class UserPage extends React.Component{
                description={picked.description}
                id={picked.id}
                province={picked.province}
+               statusVisit={picked.statusVisit}
                country={picked.country}
                callDelete={this.callDelete}
             />
@@ -61,8 +62,11 @@ class UserPage extends React.Component{
    render(){
       return(
          <main className="user-page" >
-            <ul className="user-page__list">
+            <ul className="user-page__bucket-list">
                {this.showList()}
+            </ul>
+            <ul className="user-page__visited-list">
+               
             </ul>
          </main>
       );
