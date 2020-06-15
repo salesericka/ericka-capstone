@@ -1,12 +1,26 @@
 @import '../../partials/variables';
+@import '../../partials/mixins';
 
 .user-page{
-   padding:1rem;
+   @include padding-format;
 
-   &__bucket-list{
+   @include tablet{
+      display:flex;
+      justify-content: space-between;
+   }
+
+   &__bucket-list,
+   &__visited-list{
       justify-content: space-between;
       display:flex;
       flex-wrap: wrap;
-      width:50%;
+      margin:0 auto;
+      width:80%;
+
+      @include tablet{
+         width:50%;
+         margin:0;
+      }
    }
+
 }

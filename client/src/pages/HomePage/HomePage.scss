@@ -1,6 +1,8 @@
 @import '../../partials/variables';
+@import '../../partials/mixins';
 
 .home{
+   @include padding-format;
    width:100%;
    height:100vh;
    background-image: url('../../assets/homeImage.jpg');
@@ -13,9 +15,16 @@
    filter: grayscale(0.25);
 
    &__start{
-      font-size: 100px;
-      color:$light-text;
-      opacity:70%;
+      font-size:50px;
+      color:$brown;
+      opacity:80%;
+
+      @include tablet{
+         font-size:80px;
+      }
+      @include desktop{
+         font-size:120px;
+      }
       &:hover{
          color:$light-p;
       }

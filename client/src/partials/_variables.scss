@@ -2,4 +2,33 @@ $dark-g: #3c4245;
 $light-g: #5F6769;
 $lighter-g: #719192;
 $light-p: #DFCDC3;
-$light-text:#ffff;
+
+//color Theme
+$primary:#314743;
+$primary-pressed:#162f2d;
+
+$secondary:#375f5f;
+$secondary-light:	#506e71;
+
+$other:#78a3ab;
+$other-pressed:#638686;
+
+$brown:#9b8a69;
+$brown-pressed:#666145;
+
+$sky:#aecdd4;
+
+$light-text:#d6dad7;
+$accent:#c57c3d;
+
+
+//Spacing
+$s-unit: 1rem;
+$m-unit: 1.5rem;
+$l-unit: 2rem;
+$xl-unit: 2.5rem;
+$xxl-unit: 4rem;
+
+//Screen Size
+$tablet-breakpoint: 48rem;
+$desktop-breakpoint: 75rem;

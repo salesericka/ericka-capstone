@@ -16,7 +16,8 @@ class MapChart extends React.Component{
       },
       places:[],
       toolTip:"",
-      default:true
+      default:true,
+      province:"Northwest Territories"
     }
 
    handleMoveEnd=(position)=>{
@@ -32,7 +33,8 @@ class MapChart extends React.Component{
          .then(response=>{
             this.setState({
                places:response.data,
-               default:false
+               default:false,
+               province:data
             })
          })
    }
@@ -55,12 +57,16 @@ class MapChart extends React.Component{
       
       return(
          <main className="map">
-            <div className="map__container">
+             <h1 className="map__country">
+                  Canada
+               </h1>
+            <section className="map__container">
                <ComposableMap projectionConfig={{
                   rotate: [20, 0, 20],
                   scale: 215,
                   center: [-79.347015,50.651070]
-                  }} className="map__content"
+                  }} 
+                  className="map__content"
                   data-tip=""
                   >
                   <ZoomableGroup 
@@ -82,9 +88,11 @@ class MapChart extends React.Component{
                      </Geographies>
                   </ZoomableGroup>
                </ComposableMap>
-            </div>
-
+            </section>
             <aside className="map__information">
+               <h2 className="map__label-province">
+                  {this.state.province}
+               </h2>
                {this.state.places.map(place=>{
                   return <LocationItem
                      key={place.id}

@@ -7,17 +7,19 @@ import LocationPage from './pages/LocationPage/LocationPage';
 import './partials/_commons.scss';
 import UserPage from './pages/UserPage/UserPage';
 
-class App extends React.Component {
+class App extends React.Component { 
   render(){
     return (
-      <BrowserRouter>
-        <Header/>
-        <Switch>
-          <Route path="/" exact component={HomePage}/>
-          <Route path="/location" component={LocationPage}/>
-          <Route path="/userpage" component={UserPage}/>
-        </Switch>
-      </BrowserRouter>
+      <div className="app">
+        <BrowserRouter>
+          <Header/>
+          <Switch>
+            <Route path="/" exact component={HomePage}/>
+            <Route path="/location" component={LocationPage}/>
+            <Route path="/userpage" component={UserPage}/>
+          </Switch>
+        </BrowserRouter>
+      </div>
     );
   }
 }

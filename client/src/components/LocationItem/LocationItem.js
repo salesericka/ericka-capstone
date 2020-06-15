@@ -1,11 +1,8 @@
 import React from 'react';
 import './LocationItem.scss';
 import axios from 'axios';
-import plus from '../../assets/plus.svg';
 import close from '../../assets/close.svg';
-import check from '../../assets/check.svg';
 import Modal from 'react-modal';
-import ReactTooltip from 'react-tooltip'
 
 const API_URL = process.env.REACT_APP_API_URL;
 
@@ -14,7 +11,7 @@ class LocationItem extends React.Component {
 
   state={
     showModal:false,
-    icon:plus
+    addStatus:"Add to List"
   }
 
   addToList=(e)=>{
@@ -24,7 +21,7 @@ class LocationItem extends React.Component {
       .post(`${API_URL}/userBucketList`, this.props)
       .then(response=>{
         this.setState({
-          icon:check
+          addStatus:"Added"
         })
       })
   }
@@ -78,15 +75,10 @@ class LocationItem extends React.Component {
               
               <button className="modal__button-add" 
                 onClick={this.addToList}
-                data-tip="Add to list"
               >
-                <img className="modal__icon-plus" 
-                  src={this.state.icon} 
-                  alt="plus icon" 
-                />
+                {this.state.addStatus}
               </button>
             </section>
-            <ReactTooltip/>
           </Modal>
       </div>
     );

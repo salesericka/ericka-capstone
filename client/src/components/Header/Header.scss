@@ -1,49 +1,55 @@
 @import '../../partials/variables';
+@import '../../partials//mixins';
 
 .header{
-   width: 100%;
-   background-color:$lighter-g;
-   padding:1rem 0;
-   box-shadow: 2px 3px 5px#000000b1;
-   &__nav{
-      display:flex;
-      padding:0 1rem;
-      width:100%;
-      box-sizing: border-box;
-      align-items: center;
+   padding:1rem;
+   position: fixed;
+   z-index:2000;
+
+   &__icon-menu{
+      @include icon-format;
+   }
+
+   &__open{
+      background-color: rgba($color: $primary, $alpha: 0.75);
    }
 
 }
-
-.nav__homepage,
-.nav__location{
-   color:$light-text;
-   font-size: 20px;
-   font-weight:700;
-   margin-left:1rem;
-}
-
-.link{
-   text-decoration: none;
-}
-
-.nav__wrapper{
-   margin-left:auto;
+.nav{
    display:flex;
-   align-self: flex-end;
-   align-items: center;
-}
+   flex-direction: column;
+   box-sizing: border-box;
 
-.nav__username{
-   color:$light-text;
-   font-size: 20px;
-   font-weight:700;
-}
+   &__wrapper{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      max-width:200px;
+      white-space: nowrap;
+      overflow: hidden;
+   }
 
-.nav__user-wrap-photo{
-   background-color: $light-p;
-   border-radius: 50px;
-   width:50px;
-   height:50px;
-   margin-left: 1rem;
+   &__user-wrap-photo{
+      @include user-photo-wrapper;
+   }
+
+   &__user-photo{
+      @include user-photo-format;
+   }
+
+   &__user,
+   &__sign-in-info{
+      color:$light-text;
+   }
+
+   &__homepage,
+   &__location,
+   &__user-list,
+   &__sign-in-greeting{
+      @include h4-format;
+   }
+
+   &__button{
+      @include button-format;
+   }
 }

@@ -1,0 +1,106 @@
+@import './variables';
+
+//view
+@mixin tablet {
+   @media screen and (min-width: $tablet-breakpoint) {
+     @content;
+   }
+ }
+ 
+ @mixin desktop {
+   @media screen and (min-width: $desktop-breakpoint) {
+     @content;
+   }
+ }
+
+// Padding Formats
+@mixin mobile-padding-side {
+   padding: 0 $s-unit;
+ }
+ @mixin tablet-padding-side {
+   padding: 0 $m-unit;
+ }
+ @mixin desktop-padding-side {
+   padding: 0 6.875rem;
+ }
+ 
+ @mixin desktop-padding-one-side {
+   padding-left: 6.875rem;
+   padding-right:0;
+ }
+ @mixin about-desktop-padding {
+   padding: 0 5rem;
+ }
+
+
+//Formats
+@mixin padding-format{
+   @include mobile-padding-side;
+   @include tablet{
+      @include tablet-padding-side;
+   }
+   @include desktop{
+      @include desktop-padding-side;
+   }
+}
+
+@mixin icon-format{
+   width:20px;
+   @include tablet{
+      width:20px;
+   }
+   @include desktop{
+      width:20px;
+   }
+}
+
+@mixin user-photo-wrapper{
+   width:50px;
+}
+@mixin user-photo-format{
+   width:100%;
+   border-radius: 50px;
+   
+}
+
+@mixin h4-format{
+   color:$light-text;
+   font-size: 15px;
+   font-weight:700;
+   margin:0.5rem 0;
+   &:hover{
+      color:$accent;
+   }
+}
+
+@mixin h2-format {
+   font-size: 25px;
+   color:$primary-pressed;
+   @include tablet{
+      font-size: 30px;
+   }
+}
+@mixin p-format{
+   font-size: 13px;
+   color:$primary-pressed;
+   @include tablet{
+      font-size: 15px;
+   }
+}
+@mixin button-format{
+   color:$primary-pressed;
+   font-weight: 800;
+   text-transform: uppercase;
+   padding:0.5rem 1.5rem;
+   border-radius:2px;
+   border:none;
+   background-color: $accent;
+   @include desktop{
+      font-size: 15px;
+   }
+
+   &:hover{
+      color:$accent;
+      background-color: $primary-pressed;
+   }
+}

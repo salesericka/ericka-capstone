@@ -3,7 +3,6 @@ import './UserPage.scss';
 import axios from 'axios';
 import FaveCard from '../../components/FaveCard/FaveCard';
 
-
 const API_URL = process.env.REACT_APP_API_URL;
 
 class UserPage extends React.Component{
@@ -40,6 +39,8 @@ class UserPage extends React.Component{
          })
    }
 
+
+
    showList=()=>{
       const userListData = this.state.userList.map(picked=>{
          return (
@@ -67,7 +68,7 @@ class UserPage extends React.Component{
                {this.showList()}
             </ul>
             <ul className="user-page__visited-list">
-               
+               {this.showList()}
             </ul>
          </main>
       );
