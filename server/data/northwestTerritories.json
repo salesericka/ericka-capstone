@@ -7,7 +7,8 @@
       "province": "Northwest Territories",
       "country": "Canada",
       "longitude": -123.32813,
-      "latitude":	61.05308
+      "latitude":	61.05308,
+      "comments":[]
     },
     {
       "id": "NT-2",
@@ -17,7 +18,8 @@
       "province": "Northwest Territories",
       "country": "Canada",
       "longitude":	-114.371788,
-      "latitude":62.453972
+      "latitude":62.453972,
+      "comments":[]
     },
     {
       "id": "NT-3",
@@ -27,7 +29,8 @@
       "province": "Northwest Territories",
       "country": "Canada",
       "longitude": -115.79993,
-      "latitude":	60.81555
+      "latitude":	60.81555,
+      "comments":[]
     },
     {
       "id": "NT-4",
@@ -37,7 +40,8 @@
       "province": "Northwest Territories",
       "country": "Canada",
       "longitude":-127.5333,
-      "latitude":70.6000
+      "latitude":70.6000,
+      "comments":[]
     },
     {
       "id": "NT-5",
@@ -47,6 +51,7 @@
       "province": "Northwest Territories",
       "country": "Canada",
       "longitude":-121.499998,
-      "latitude":	73.0 
+      "latitude":	73.0,
+      "comments":[]
     }
 ]

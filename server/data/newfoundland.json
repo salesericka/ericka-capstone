@@ -7,7 +7,8 @@
       "province": "Newfoundland and Labrador",
       "country": "Canada",
       "longitude": -57.736163722,
-      "latitude":	49.686997252
+      "latitude":	49.686997252,
+      "comments":[]
     },
     {
       "id": "NL-2",
@@ -17,7 +18,8 @@
       "province": "Newfoundland and Labrador",
       "country": "Canada",
       "longitude":-52.623913,
-      "latitude":		47.523636
+      "latitude":		47.523636,
+      "comments":[]
     },
     {
       "id": "NL-3",
@@ -27,7 +29,8 @@
       "province": "Newfoundland and Labrador",
       "country": "Canada",
       "longitude":-54.739497042,
-      "latitude":	49.63999744 
+      "latitude":	49.63999744,
+      "comments":[] 
     },
     {
       "id": "NL-4",
@@ -37,7 +40,8 @@
       "province": "Newfoundland and Labrador",
       "country": "Canada",
       "longitude": -54.255332312,
-      "latitude":47.250498998
+      "latitude":47.250498998,
+      "comments":[]
     },
     {
       "id": "NL-5",
@@ -47,6 +51,7 @@
       "province": "Newfoundland and Labrador",
       "country": "Canada",
       "longitude":	-53.882446,
-      "latitude":	48.528427
+      "latitude":	48.528427,
+      "comments":[]
     }
 ]

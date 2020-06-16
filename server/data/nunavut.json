@@ -7,7 +7,8 @@
       "province": "Nunavut",
       "country": "Canada",
       "longitude":	-70.965424,
-      "latitude":	65.421509
+      "latitude":	65.421509,
+      "comments":[]
     },
     {
       "id": "NU-2",
@@ -17,7 +18,8 @@
       "province": "Nunavut",
       "country": "Canada",
       "longitude":-66,
-      "latitude":	67.666667
+      "latitude":	67.666667,
+      "comments":[]
     },
     {
       "id": "NU-3",
@@ -27,7 +29,8 @@
       "province": "Nunavut",
       "country": "Canada",
       "longitude":	-72.665192,
-      "latitude":		80.750389
+      "latitude":		80.750389,
+      "comments":[]
     },
     {
       "id": "NU-4",
@@ -37,7 +40,8 @@
       "province": "Nunavut",
       "country": "Canada",
       "longitude":-77.731,
-      "latitude":72.251 
+      "latitude":72.251,
+      "comments":[] 
     },
     {
       "id": "NU-5",
@@ -47,6 +51,7 @@
       "province": "Nunavut",
       "country": "Canada",
       "longitude":-79.499998,
-      "latitude":	56.333332 
+      "latitude":	56.333332,
+      "comments":[] 
     }
 ]

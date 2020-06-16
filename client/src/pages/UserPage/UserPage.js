@@ -39,8 +39,6 @@ class UserPage extends React.Component{
          })
    }
 
-
-
    showList=()=>{
       const userListData = this.state.userList.map(picked=>{
          return (
@@ -62,12 +60,8 @@ class UserPage extends React.Component{
 
    render(){
       return(
-         <main className="user-page" >
-            
+         <main className="user-page">
             <ul className="user-page__bucket-list">
-               {this.showList()}
-            </ul>
-            <ul className="user-page__visited-list">
                {this.showList()}
             </ul>
          </main>

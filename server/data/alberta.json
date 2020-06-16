@@ -7,7 +7,8 @@
       "province": "Alberta",
       "country": "Canada",
       "longitude":-115.928055,
-      "latitude":	51.496845
+      "latitude":	51.496845,
+      "comments":[]
     },
     {
       "id": "AB-2",
@@ -17,7 +18,8 @@
       "province": "Alberta",
       "country": "Canada",
       "longitude":-116.181717,
-      "latitude":	51.328239
+      "latitude":	51.328239,
+      "comments":[]
     },
     {
       "id": "AB-3",
@@ -27,7 +29,8 @@
       "province": "Alberta",
       "country": "Canada",
       "longitude":-116.181717,
-      "latitude":	51.328239
+      "latitude":	51.328239,
+      "comments":[]
     },
     {
       "id": "AB-4",
@@ -37,7 +40,8 @@
       "province": "Alberta",
       "country": "Canada",
       "longitude":-117.900002,
-      "latitude":52.799999
+      "latitude":52.799999,
+      "comments":[]
     },
     {
       "id": "AB-5",
@@ -47,7 +51,8 @@
       "province": "Alberta",
       "country": "Canada",
       "longitude":-113.623055,
-      "latitude":	53.522778
+      "latitude":	53.522778,
+      "comments":[]
 
     }
 ]

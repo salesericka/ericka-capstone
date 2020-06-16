@@ -7,7 +7,8 @@
       "province": "Saskatchewan",
       "country": "Canada",
       "longitude":-105.749997,
-      "latitude":	53.1999992 
+      "latitude":	53.1999992,
+      "comments":[] 
     },
     {
       "id": "SK-2",
@@ -17,7 +18,8 @@
       "province": "Saskatchewan",
       "country": "Canada",
       "longitude":-106.647034,
-      "latitude":		52.146973
+      "latitude":		52.146973,
+      "comments":[]
     },
     {
       "id": "SK-3",
@@ -27,7 +29,8 @@
       "province": "Saskatchewan",
       "country": "Canada",
       "longitude":-104.618896,
-      "latitude":	50.445210
+      "latitude":	50.445210,
+      "comments":[]
     },
     {
       "id": "SK-4",
@@ -37,7 +40,8 @@
       "province": "Saskatchewan",
       "country": "Canada",
       "longitude":-104.749997,
-      "latitude":50.5499978
+      "latitude":50.5499978,
+      "comments":[]
     },
     {
       "id": "SK-5",
@@ -47,6 +51,7 @@
       "province": "Saskatchewan",
       "country": "Canada",
       "longitude":-106.49,
-      "latitude":52.821 
+      "latitude":52.821,
+      "comments":[] 
     }
 ]

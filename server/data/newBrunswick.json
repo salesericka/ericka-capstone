@@ -7,7 +7,8 @@
       "province": "New Brunswick",
       "country": "Canada",
       "longitude":-64.57333104,
-      "latitude":	45.82333004 
+      "latitude":	45.82333004 ,
+      "comments":[]
     },
     {
       "id": "NB-2",
@@ -17,7 +18,8 @@
       "province": "New Brunswick",
       "country": "Canada",
       "longitude":-64.952332,
-      "latitude":45.596832
+      "latitude":45.596832,
+      "comments":[]
     },
     {
       "id": "NB-3",
@@ -27,7 +29,8 @@
       "province": "New Brunswick",
       "country": "Canada",
       "longitude":-64.7778,
-      "latitude":	45.6108 
+      "latitude":	45.6108 ,
+      "comments":[]
     },
     {
       "id": "NB-4",
@@ -37,7 +40,8 @@
       "province": "New Brunswick",
       "country": "Canada",
       "longitude":-66.815773,
-      "latitude":	44.706390
+      "latitude":	44.706390,
+      "comments":[]
     },
     {
       "id": "NB-5",
@@ -47,6 +51,7 @@
       "province": "New Brunswick",
       "country": "Canada",
       "longitude":-66.919472,
-      "latitude":	44.890015
+      "latitude":	44.890015,
+      "comments":[]
     }
 ]

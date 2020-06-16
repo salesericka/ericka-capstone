@@ -11,7 +11,8 @@ class LocationItem extends React.Component {
 
   state={
     showModal:false,
-    addStatus:"Add to List"
+    addStatus:"Add to List",
+    comment:{}
   }
 
   addToList=(e)=>{
@@ -26,12 +27,26 @@ class LocationItem extends React.Component {
       })
   }
 
+  callComments=()=>{
+    const commentURL="/v1/quotes"
+    axios.get(`${API_URL}/proxy${commentURL}`)
+    .then(response=>{
+      console.log("COmments",response.data.quotes[0])
+      this.setState({
+        comment:response.data.quotes[0]
+      })
+    })
+    .catch(err=>console.log(err))
+  }
+
   handleModal=()=>{
     this.setState({
       showModal:!this.state.showModal
     })
   }
-
+  componentDidMount=()=>{
+    this.callComments();
+  }
   render(){
     return (
       <div className="location__item" id={this.props.id} onClick={this.handleModal}>
@@ -46,6 +61,7 @@ class LocationItem extends React.Component {
             isOpen={this.state.showModal}
             onRequestClose={this.handleModal}
             className="modal"
+            id="scroll"
           >
             <section className="modal__container">
               <img className="modal__icon-close" 
@@ -78,6 +94,18 @@ class LocationItem extends React.Component {
               >
                 {this.state.addStatus}
               </button>
+
+              <ul className="modal__comment-list">
+                <h1>{this.state.comment.author}</h1>
+                <p>{this.state.comment.quote} </p>
+                {/* {this.props.comments.map(comment=>{
+                  return <CommentItem key={comment.id}
+                    author={comment.author}
+                    comment={comment.comment}
+                    
+                    />
+                })} */}
+              </ul>
             </section>
           </Modal>
       </div>

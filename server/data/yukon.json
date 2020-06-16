@@ -7,7 +7,8 @@
       "province": "Yukon",
       "country": "Canada",
       "longitude":-135.056839,
-      "latitude":		60.721188
+      "latitude":		60.721188,
+      "comments":[]
     },
     {
       "id": "YT-2",
@@ -17,7 +18,8 @@
       "province": "Yukon",
       "country": "Canada",
       "longitude":-135.358272,
-      "latitude":	60.878969
+      "latitude":	60.878969,
+      "comments":[]
     },
     {
       "id": "YT-3",
@@ -27,7 +29,8 @@
       "province": "Yukon",
       "country": "Canada",
       "longitude": -135.0478,
-      "latitude":	60.7134
+      "latitude":	60.7134,
+      "comments":[]
     },
     {
       "id": "YT-4",
@@ -37,7 +40,8 @@
       "province": "Yukon",
       "country": "Canada",
       "longitude":-135.056839,
-      "latitude":60.721188
+      "latitude":60.721188,
+      "comments":[]
     },
     {
       "id": "YT-5",
@@ -47,6 +51,7 @@
       "province": "Yukon",
       "country": "Canada",
       "longitude":-135.338283,
-      "latitude":	60.871533
+      "latitude":	60.871533,
+      "comments":[]
     }
 ]

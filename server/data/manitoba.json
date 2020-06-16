@@ -7,7 +7,8 @@
       "province": "Manitoba",
       "country": "Canada",
       "longitude":-94.164963,
-      "latitude":58.768410
+      "latitude":58.768410,
+      "comments":[]
     },
     {
       "id": "MB-2",
@@ -17,7 +18,8 @@
       "province": "Manitoba",
       "country": "Canada",
       "longitude":-97.5242595696,
-      "latitude":	50.7336720653
+      "latitude":	50.7336720653,
+      "comments":[]
     },
     {
       "id": "MB-3",
@@ -27,7 +29,8 @@
       "province": "Manitoba",
       "country": "Canada",
       "longitude": -95.8749965,
-      "latitude":	50.142666096
+      "latitude":	50.142666096,
+      "comments":[]
     },
     {
       "id": "MB-4",
@@ -37,7 +40,8 @@
       "province": "Manitoba",
       "country": "Canada",
       "longitude":-97.131187,
-      "latitude":49.887379
+      "latitude":49.887379,
+      "comments":[]
     },
     {
       "id": "MB-5",
@@ -47,6 +51,7 @@
       "province": "Manitoba",
       "country": "Canada",
       "longitude":-95.333332,
-      "latitude":49.916663 
+      "latitude":49.916663 ,
+      "comments":[]
     }
 ]

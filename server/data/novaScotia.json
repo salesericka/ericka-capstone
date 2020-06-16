@@ -7,7 +7,8 @@
       "province": "Nova Scotia",
       "country": "Canada",
       "longitude":-60.746113,
-      "latitude":	46.486942
+      "latitude":	46.486942,
+      "comments":[]
     },
     {
       "id": "NS-2",
@@ -17,7 +18,8 @@
       "province": "Nova Scotia",
       "country": "Canada",
       "longitude": -63.917162998,
-      "latitude":	44.488998044
+      "latitude":	44.488998044,
+      "comments":[]
     },
     {
       "id": "NS-3",
@@ -27,7 +29,8 @@
       "province": "Nova Scotia",
       "country": "Canada",
       "longitude":-60.650977,
-      "latitude":	46.738285
+      "latitude":	46.738285,
+      "comments":[]
     },
     {
       "id": "NS-4",
@@ -37,7 +40,8 @@
       "province": "Nova Scotia",
       "country": "Canada",
       "longitude":-63.5500,
-      "latitude":44.6167
+      "latitude":44.6167,
+      "comments":[]
     },
     {
       "id": "NS-5",
@@ -47,6 +51,7 @@
       "province": "Nova Scotia",
       "country": "Canada",
       "longitude": -64.317998728,
-      "latitude":	44.372831842
+      "latitude":	44.372831842,
+      "comments":[]
     }
 ]

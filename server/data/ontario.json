@@ -7,7 +7,8 @@
       "province": "Ontario",
       "country": "Canada",
       "longitude":-79.106667,
-      "latitude":43.060001
+      "latitude":43.060001,
+      "comments":[]
     },
     {
       "id": "ON-2",
@@ -17,7 +18,8 @@
       "province": "Ontario",
       "country": "Canada",
       "longitude":-79.387054,
-      "latitude":43.642567
+      "latitude":43.642567,
+      "comments":[]
     },
     {
       "id": "ON-3",
@@ -27,7 +29,8 @@
       "province": "Ontario",
       "country": "Canada",
       "longitude":-75.699234,
-      "latitude":45.424807
+      "latitude":45.424807,
+      "comment":[]
     },
     {
       "id": "ON-4",
@@ -37,7 +40,8 @@
       "province": "Ontario",
       "country": "Canada",
       "longitude":-75.9902,
-      "latitude":44.3337
+      "latitude":44.3337,
+      "comments":[]
     },
     {
       "id": "ON-5",
@@ -47,6 +51,7 @@
       "province": "Ontario",
       "country": "Canada",
       "longitude":-78.378761,
-      "latitude":45.837559
+      "latitude":45.837559,
+      "comments":[]
     }
 ]

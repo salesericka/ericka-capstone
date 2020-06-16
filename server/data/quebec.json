@@ -7,7 +7,8 @@
       "province": "Quebec",
       "country": "Canada",
       "longitude": -61.866672,
-      "latitude":	47.383338
+      "latitude":	47.383338,
+      "comments":[]
     },
     {
       "id": "QB-2",
@@ -17,7 +18,8 @@
       "province": "Quebec",
       "country": "Canada",
       "longitude":-73.554081117,
-      "latitude":	45.554331116
+      "latitude":	45.554331116,
+      "comments":[]
     },
     {
       "id": "QB-3",
@@ -27,7 +29,8 @@
       "province": "Quebec",
       "country": "Canada",
       "longitude":-74.599998,
-      "latitude":46.116669
+      "latitude":46.116669,
+      "comments":[]
     },
     {
       "id": "QB-4",
@@ -37,7 +40,8 @@
       "province": "Quebec",
       "country": "Canada",
       "longitude":-73.5537561183,
-      "latitude":	45.5026896559 
+      "latitude":	45.5026896559,
+      "comments":[] 
     },
     {
       "id": "QB-5",
@@ -47,7 +51,8 @@
       "province": "Quebec",
       "country": "Canada",
       "longitude":-71.147684,
-      "latitude":	46.890804
+      "latitude":	46.890804,
+      "comments":[]
 
     }
 ]

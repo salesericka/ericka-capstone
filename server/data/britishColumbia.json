@@ -7,7 +7,8 @@
       "province": "British Columbia",
       "country": "Canada",
       "longitude":-122.957359,
-      "latitude":	50.1163196
+      "latitude":	50.1163196,
+      "comments":[]
     },
     {
       "id": "BC-2",
@@ -17,7 +18,8 @@
       "province": "British Columbia",
       "country": "Canada",
       "longitude":-116.583333,
-      "latitude":	51.466667
+      "latitude":	51.466667,
+      "comments":[]
     },
     {
       "id": "BC-3",
@@ -27,7 +29,8 @@
       "province": "British Columbia",
       "country": "Canada",
       "longitude":-123.116226,
-      "latitude":49.246292
+      "latitude":49.246292,
+      "comments":[]
 
     },
     {
@@ -38,7 +41,8 @@
       "province": "British Columbia",
       "country": "Canada",
       "longitude":-113.8070624,
-      "latitude": 48.6960847
+      "latitude": 48.6960847,
+      "comments":[]
     },
     {
       "id": "BC-5",
@@ -48,7 +52,8 @@
       "province": "British Columbia",
       "country": "Canada",
       "longitude":-129.9173,
-      "latitude":	51.9227
+      "latitude":	51.9227,
+      "comments":[]
 
 
     }

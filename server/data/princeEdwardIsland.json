@@ -7,7 +7,8 @@
       "province": "Prince Edward Island",
       "country": "Canada",
       "longitude":-63.073544,
-      "latitude":	46.415853
+      "latitude":	46.415853,
+      "comments":[]
     },
     {
       "id": "PE-2",
@@ -17,7 +18,8 @@
       "province": "Prince Edward Island",
       "country": "Canada",
       "longitude": -62.1054829114,
-      "latitude":	46.373248507
+      "latitude":	46.373248507,
+      "comments":[]
     },
     {
       "id": "PE-3",
@@ -27,7 +29,8 @@
       "province": "Prince Edward Island",
       "country": "Canada",
       "longitude":	-63.745834,
-      "latitude":		46.215279
+      "latitude":		46.215279,
+      "comments":[]
     },
     {
       "id": "PE-4",
@@ -37,7 +40,8 @@
       "province": "Prince Edward Island",
       "country": "Canada",
       "longitude": -64.0,
-      "latitude":47.0666664
+      "latitude":47.0666664,
+      "comments":[]
     },
     {
       "id": "PE-5",
@@ -47,6 +51,7 @@
       "province": "Prince Edward Island",
       "country": "Canada",
       "longitude":-63.000000,
-      "latitude":46.250000
+      "latitude":46.250000,
+      "comments":[]
     }
 ]
