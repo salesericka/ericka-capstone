@@ -17,8 +17,8 @@
    &__start{
       font-size:40px;
       color: $light-text;
-      opacity:80%;
-      text-shadow: 5px 5px 5px rgba($primary-pressed,0.8);
+      opacity:85%;
+      text-shadow: 3px 3px 9px rgba($primary-pressed,0.8);
       @include tablet{
          font-size:80px;
       }

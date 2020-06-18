@@ -56,8 +56,6 @@
       fill:$light-text;
       opacity:65%;
       stroke:rgba($primary, 0.50);
-      text-shadow: 5px 5px 5px rgba($primary-pressed,0.8);
-      box-shadow: 5px 5px 5px rgba($primary-pressed,0.8);
       &:focus{
          outline:0px;
          fill:$secondary;
@@ -70,6 +68,7 @@
    &__information{
       @include padding-format;
       width:100%;
+      background-color:rgba($primary, 0.7);
       @include tablet{
          display:flex;
          flex-wrap:wrap;
@@ -81,19 +80,17 @@
    }
 
    &__label-province{
-      margin:1rem 0;
+      padding:1rem 0;
       @include h2-format;
+      color: #ffff;
       width:100%;
    }
 
 }
 .map__carousel{
    background-color: transparent;
+   margin-bottom:1rem;
    @include tablet{
-      width:80%;
+      max-width:500px;
    }
-   @include desktop{
-      width:70%;
-   }
-
 }

@@ -81,7 +81,9 @@ class UserPage extends React.Component{
 
                <>
                <section className="user-page__section">
-                  <h3 className="user-page__section-label"> LIST</h3>
+                  <h3 className="user-page__section-label">
+                     {firebase.auth().currentUser.displayName}'s list
+                  </h3>
                   <ul className="user-page__bucket-list">
                      {this.showList()}
                   </ul>
@@ -93,7 +95,9 @@ class UserPage extends React.Component{
 
                <>
                <section className="user-page__section">
-                  <h1>Empty List fool, add something</h1>
+                  <h3 className="user-page__section-label">
+                     Empty List fool, add something
+                  </h3>
                </section>
                </>
 

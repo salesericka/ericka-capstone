@@ -2,7 +2,6 @@
 @import '../../partials/mixins';
 
 .user-page{
- 
    &__video-container{
       width:100%;
       position: relative;
@@ -43,6 +42,13 @@
    }
    &__section{
       @include padding-format;
-      background-color: $light-text;
+      background-color:rgba($primary, 0.7);
+
+   }
+
+   &__section-label{
+      padding:1rem 0;
+      @include h2-format;
+      color:$light-text;
    }
 }

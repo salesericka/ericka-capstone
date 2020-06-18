@@ -79,9 +79,10 @@ class LocationItem extends React.Component {
             className="modal"
             id="scroll"
             style={modalStyle}
+            overlayClassName = "overlay"
           >
             <section className="modal__container">
-            <img className="modal__icon-close" 
+              <img className="modal__icon-close" 
                 src={close} 
                 onClick={this.handleModal}
                 alt="icon close"
@@ -96,58 +97,67 @@ class LocationItem extends React.Component {
                 {this.props.province}, {this.props.country}
               </p>
 
-              <div className="modal__image-wrapper">
-                <img className="modal__image" 
-                  src={this.props.image} 
-                  alt="location" 
-                />
-              </div>
-              
-              <p className="modal__description">
-                {this.props.description}
-              </p>
-              
-              <button className="modal__button-add" 
-                onClick={this.addToList}
-              >
-                {this.state.addStatus}
-              </button>
-
-              <ul className="modal__comment-list">
-                <h3 className="modal__comment-label">
-                    Comments
-                </h3>
-                <li className="modal__comment-item comment-item">
-                <div className="comment-item__user-wrapper">
-                  {/* <img className="comment-item__user-photo" src="" alt="profile"/> */}
+              <div className="modal__info-container">
+                <div className="modal__image-wrapper">
+                  <img className="modal__image" 
+                    src={this.props.image} 
+                    alt="location" 
+                  />
                 </div>
-                  <div className="comment-item__info-wrapper">
-                    <h4 className="comment-item__user">
-                    {this.state.comment.author}
-                    </h4>
-                    <p className="comment-item__comment">
-                    {this.state.comment.quote}
-                    </p>
-                  </div>
-                </li>
-                {this.props.comments.map(input=>{
-                  return <li className="modal__comment-item comment-item" 
-                    key={input.id}
-                    > 
-                      <div className="comment-item__user-wrapper">
-                        {/* <img className="comment-item__user-photo" src="" alt="profile"/> */}
-                      </div>
+                
+                <div className="modal__d-b-wrapper">
+                  <p className="modal__description">
+                    {this.props.description}
+                  </p>
+                  
+                  <button className="modal__button-add" 
+                    onClick={this.addToList}
+                  >
+                  
+                    {this.state.addStatus}
+                  </button>
+
+
+                  <ul className="modal__comment-list">
+                    <h3 className="modal__comment-label">
+                        Comments
+                    </h3>
+                    <li className="modal__comment-item comment-item">
+                    <div className="comment-item__user-wrapper">
+                      {/* <img className="comment-item__user-photo" src="" alt="profile"/> */}
+                    </div>
                       <div className="comment-item__info-wrapper">
                         <h4 className="comment-item__user">
-                          {input.author}
+                        {this.state.comment.author}
                         </h4>
                         <p className="comment-item__comment">
-                          {input.comment}
+                        {this.state.comment.quote}
                         </p>
                       </div>
                     </li>
-                })}
+                    {this.props.comments.map(input=>{
+                      return <li className="modal__comment-item comment-item" 
+                        key={input.id}
+                        > 
+                          <div className="comment-item__user-wrapper">
+                            {/* <img className="comment-item__user-photo" src="" alt="profile"/> */}
+                          </div>
+                          <div className="comment-item__info-wrapper">
+                            <h4 className="comment-item__user">
+                              {input.author}
+                            </h4>
+                            <p className="comment-item__comment">
+                              {input.comment}
+                            </p>
+                          </div>
+                        </li>
+                    })}
               </ul>
+
+              </div>
+              </div>
+
+              
 
             </section>
           </Modal>

@@ -6,7 +6,7 @@
    background-color:#d6dcdc ;
    display:flex;
    flex-direction: column;
-   margin:1rem 1rem 0 0;
+   margin:1rem 1rem 1rem 0;
    @include tablet{
       width:45%;
    }
@@ -28,7 +28,8 @@
       @include button-format;
    }
    &__button-visited{
-      background-color: aquamarine;
+      @include button-format;
+      background-color: $sky;
       margin-top:1rem;
       padding:0.5rem;
       border:none;
