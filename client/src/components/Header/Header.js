@@ -4,21 +4,23 @@ import {Link} from 'react-router-dom';
 import firebase from 'firebase';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 import menu from '../../assets/bars-solid.svg';
-import {CSSTransition} from 'react-transition-group';
+import close from '../../assets/close.svg';
+import axios from 'axios';
 
 firebase.initializeApp({
   apiKey:"AIzaSyDC5y-XfZNA654X0Cs3PiSfPA9X3mkLVNE",
   authDomain:"capstone-22ea4.firebaseapp.com"
 });
-
+const API_URL = process.env.REACT_APP_API_URL;
 class Header extends React.Component{
    state={
       signIn:false,
       showNav:false,
-      headerClass:"header"
-    }
+      headerClass:"header",
+      headerIcon:menu
+   }
   
-    uiConfig = {
+   uiConfig = {
       signInFlow: "popup",
       signInOptions: [
         firebase.auth.GoogleAuthProvider.PROVIDER_ID,
@@ -27,31 +29,59 @@ class Header extends React.Component{
       callbacks: {
          signInSuccessWithAuthResult: () => false
       }
-    }
-  
-    componentDidMount=()=>{
+   }
+    
+   componentDidMount=()=>{
       firebase.auth().onAuthStateChanged(user=>{
         this.setState({
           signIn:!!user
         })
-        console.log("DATA", user)
+        let userData={
+         userId:user.uid,
+         list:[]
+         }
+         axios
+         .post(`${API_URL}/userBucketList/user`,userData)
+         .then(res=>{
+            console.log(res.data)
+         })
+         .catch(err=>{
+            console.log(err)
+         })
       })
-    }
+   }
 
-    callMenu=(e)=>{
+   // addUser=()=>{
+   //    let userData={
+   //       userId:firebase.auth().currentUser.uid,
+   //       list:[]
+   //    }
+   //    axios
+   //       .post(`${API_URL}/userBucketList/user`,userData)
+   //       .then(res=>{
+   //          console.log(res.data)
+   //       })
+   //       .catch(err=>{
+   //          console.log(err)
+   //       })
+   // }
+
+   callMenu=(e)=>{
       e.preventDefault();
       if(this.state.showNav === false){
          this.setState({
             showNav:true,
-            headerClass:"header header__open"
+            headerClass:"header header__open",
+            headerIcon:close
          })
       }else{
          this.setState({
             showNav:false,
-            headerClass:"header"
+            headerClass:"header",
+            headerIcon:menu
          })
       }
-    }
+   }
 
    render(){
    return(
@@ -60,7 +90,7 @@ class Header extends React.Component{
             <>
                <img className="header__icon-menu" 
                alt="menu"
-               src={menu}
+               src={this.state.headerIcon}
                onClick={this.callMenu}
                />
 
@@ -76,26 +106,29 @@ class Header extends React.Component{
                         </h4>
                      </Link>
                   </div>
-                  
-                  <Link to="/" className="link">
-                     <h4 className="nav__homepage">
-                        Home
-                     </h4>
-                  </Link>
-                  <Link to="/location" className="link">
-                     <h4 className="nav__location">
-                        Location
-                     </h4>
-                  </Link>
-                  <Link to="/userpage" className="link">
-                     <h4 className="nav__user-list">
-                        Bucket List
-                     </h4>
-                  </Link>
-                  <button className="nav__button nav__button-sign-out"
-                     onClick={()=>firebase.auth().signOut()}>
-                     Sign out
-                  </button>
+                  <div className="nav__link-wrapper">
+                     <Link to="/" className="link">
+                        <h4 className="nav__homepage">
+                           Home
+                        </h4>
+                     </Link>
+                     <Link to="/location" className="link">
+                        <h4 className="nav__location">
+                           Location
+                        </h4>
+                     </Link>
+                     <Link to="/userpage" className="link">
+                        <h4 className="nav__user-list">
+                           Bucket List
+                        </h4>
+                     </Link>
+                  </div>
+                  <div className="nav__button-wrapper">
+                     <button className="nav__button nav__button-sign-out"
+                        onClick={()=>firebase.auth().signOut()}>
+                        Sign out
+                     </button>
+                  </div>
                </nav>
             }
             </>
@@ -106,21 +139,15 @@ class Header extends React.Component{
                      onClick={this.callMenu}>
                      Sign-In
                   </button>
-
                   {this.state.showNav && 
                      <nav className="nav">
-                        <div className="nav__wrapper">
-                           <h3 className="nav__sign-in-greeting">
-                              Welcome Back!
-                           </h3>
-                           <p className="nav__sign-in-info">
-                              Sign-In to Start
-                           </p>
-                           <StyledFirebaseAuth
-                           uiConfig={this.uiConfig}
-                           firebaseAuth={firebase.auth()}
-                           />
-                        </div>
+                        <h3 className="nav__sign-in-greeting">
+                           Welcome Back!
+                        </h3>
+                        <StyledFirebaseAuth
+                        uiConfig={this.uiConfig}
+                        firebaseAuth={firebase.auth()}
+                        />
                      </nav>
                   }
                </>
@@ -131,4 +158,4 @@ class Header extends React.Component{
    }
 }
 export default Header;
-
+export {API_URL};

@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();
-const canada_province = require('../data/canada_provinces.json');
 const Ontario =require('../data/ontario.json');
 const Quebec =require('../data/quebec.json');
 const BritishColumbia =require('../data/britishColumbia.json');
@@ -15,10 +14,6 @@ const NewfoundlandandLabrador =require('../data/newfoundland.json');
 const NewBrunswick =require('../data/newBrunswick.json');
 const PrinceEdwardIsland =require('../data/princeEdwardIsland.json');
 const { v4: uuidv4 } = require('uuid');
-
-router.get('/canada',(req,res)=>{
-   res.status(200).json(canada_province)
-})
 
 router.get('/Ontario',(req,res)=>{
    res.status(200).json(Ontario)

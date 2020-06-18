@@ -9,14 +9,15 @@ const API_URL = process.env.REACT_APP_API_URL;
 class FaveCard extends React.Component{
 
    state={
-      status:"To Visit",
+      status:"Mark as Visited",
       commentForm:false,
       statusClass:"fave-card__button-not-visited",
       commentPlaceholder:"Leave a comment"
    }
 
    callVisited=(id)=>{
-      axios.put(`${API_URL}/userBucketList/${id}`)
+      const userId = firebase.auth().currentUser.uid
+      axios.put(`${API_URL}/userBucketList/user/${userId}/${id}`)
       .then(res=>{
          this.setState({
             status:"Visited",
@@ -86,7 +87,7 @@ class FaveCard extends React.Component{
                </button>
             </div>
                {this.state.commentForm && 
-                  <form className="form"onSubmit={this.sendComment} >
+                  <form className="form" onSubmit={this.sendComment} >
                      <label className="form__label-comment">
                         Comment
                      </label>
@@ -95,11 +96,11 @@ class FaveCard extends React.Component{
                         placeholder={this.state.commentPlaceholder}
                      >
                      </textarea>
-                     <button className="form__button-submit" 
+                     <button className="form__button form__button-submit" 
                         type="submit">
                         Submit
                      </button>
-                     <button className="form__button-cancel" onClick={this.cancelComment}>
+                     <button className="form__button form__button-cancel" onClick={this.cancelComment}>
                         Cancel
                      </button>
                   </form>

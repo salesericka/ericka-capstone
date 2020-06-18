@@ -45,9 +45,9 @@
 }
 
 @mixin icon-format{
-   width:20px;
+   width:15px;
    @include tablet{
-      width:20px;
+      width:17px;
    }
    @include desktop{
       width:20px;
@@ -56,6 +56,9 @@
 
 @mixin user-photo-wrapper{
    width:50px;
+   height:50px;
+   background-color: $light-text;
+   border-radius: 50px;
 }
 @mixin user-photo-format{
    width:100%;
@@ -70,6 +73,9 @@
    margin:0.5rem 0;
    &:hover{
       color:$accent;
+   }
+   @include desktop{
+      font-size:20px;
    }
 }
 
@@ -102,5 +108,9 @@
    &:hover{
       color:$accent;
       background-color: $primary-pressed;
+   }
+
+   &:focus{
+      outline:0px;
    }
 }

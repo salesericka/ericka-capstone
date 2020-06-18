@@ -1,5 +1,5 @@
 @import "../../partials/variables";
-@import "../../partials//mixins";
+@import "../../partials/mixins";
 
 .fave-card{
    border-radius: 5px;
@@ -33,5 +33,27 @@
       padding:0.5rem;
       border:none;
       border-radius:5px;
+   }
+}
+
+.form{
+   padding:0.5rem;
+   display:flex;
+   flex-wrap:wrap;
+
+   &__label-comment{
+      width:100%;
+      @include p-format;
+      font-weight: 800;
+   }
+   &__input-comment{
+      width:100%;
+      padding:1rem;
+   }
+
+   &__button{
+      @include button-format;
+      align-items: flex-end;
+      margin:1rem auto;
    }
 }

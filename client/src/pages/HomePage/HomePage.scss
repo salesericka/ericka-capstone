@@ -15,18 +15,19 @@
    filter: grayscale(0.25);
 
    &__start{
-      font-size:50px;
-      color:$brown;
+      font-size:40px;
+      color: $light-text;
       opacity:80%;
-
+      text-shadow: 5px 5px 5px rgba($primary-pressed,0.8);
       @include tablet{
          font-size:80px;
       }
       @include desktop{
-         font-size:120px;
+         font-size:100px;
       }
       &:hover{
-         color:$light-p;
+         color:$accent;
+         -webkit-text-stroke: 0px white;
       }
    }
 }

@@ -6,7 +6,6 @@ import Header from './components/Header/Header';
 import LocationPage from './pages/LocationPage/LocationPage';
 import './partials/_commons.scss';
 import UserPage from './pages/UserPage/UserPage';
-
 class App extends React.Component { 
   render(){
     return (

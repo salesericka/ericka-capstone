@@ -2,24 +2,30 @@ import React from 'react';
 import './UserPage.scss';
 import axios from 'axios';
 import FaveCard from '../../components/FaveCard/FaveCard';
-
+import userVid from '../../assets/vid.mp4';
+import firebase from 'firebase';
 const API_URL = process.env.REACT_APP_API_URL;
 
 class UserPage extends React.Component{
    state={
       userList:[],
+      listSection:false
    }
    componentDidMount(){
       this.fetchList();
    }
 
    fetchList=()=>{
-      axios.get(`${API_URL}/userBucketList`)
+      const userId = firebase.auth().currentUser.uid
+      axios.get(`${API_URL}/userBucketList/user/${userId}`)
       .then(response=>{
-         console.log(response.data)
-         this.setState({
-            userList:response.data
-         })
+         console.log('User List',response.data)
+            if(response.data.length !== 0){
+               this.setState({
+               userList:response.data.list,
+               listSection:true
+            })
+         }
       })
       .catch(err=>{
          console.log(err);
@@ -27,8 +33,9 @@ class UserPage extends React.Component{
    }
 
    callDelete=(id)=>{
+      const userId = firebase.auth().currentUser.uid
       axios
-         .delete(`${API_URL}/userBucketList/${id}`)
+         .delete(`${API_URL}/userBucketList/user/${userId}/${id}`)
          .then(response=>{
             this.setState({
                userList:response.data
@@ -61,9 +68,37 @@ class UserPage extends React.Component{
    render(){
       return(
          <main className="user-page">
-            <ul className="user-page__bucket-list">
-               {this.showList()}
-            </ul>
+            <div className="user-page__video-container">
+               <video className="user-page__video" autoPlay={true} loop={true}>
+                  <source src={userVid}/>
+               </video>
+               <h1 className="user-page__title">
+               Explore
+               </h1>
+               <div className="user-page__overlay"></div>
+            </div>
+            {this.state.listSection ? (
+
+               <>
+               <section className="user-page__section">
+                  <h3 className="user-page__section-label"> LIST</h3>
+                  <ul className="user-page__bucket-list">
+                     {this.showList()}
+                  </ul>
+               </section>
+               
+               </>
+
+            ):(
+
+               <>
+               <section className="user-page__section">
+                  <h1>Empty List fool, add something</h1>
+               </section>
+               </>
+
+               ) 
+            }
          </main>
       );
    }

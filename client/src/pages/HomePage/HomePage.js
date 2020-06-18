@@ -8,6 +8,7 @@ class HomePage extends React.Component{
             <Link to ="/location">
                <h1 className="home__start">
                   Start Exploring
+
                </h1>
             </Link>
          </main>

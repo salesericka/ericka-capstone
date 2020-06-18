@@ -1,34 +1,63 @@
 @import '../../partials/variables';
 @import '../../partials/mixins';
 .map {
-   justify-content: center;
-   display:flex;
-   flex-direction: column;
    align-items: center;
-   &__container{
-      @include padding-format;
+   &__video-container{
+      width:100%;
+      height:100vh;
+      position: relative;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      text-align:center;
    }
 
-   &__country{
-      margin-top:1.5rem;
+   &__video{
+      width:100%;
+      height:100vh;
+      object-fit: cover;
+      // max-height:25vh;
+   }
+   &__title{
+      position: absolute;
+      color:$light-text;
+      z-index:1;
+      bottom:10px;
+      &:hover{
+         color:$accent;
+      }
+   }
+   &__video-overlay{
+      position: absolute;
+      width:100%;
+      height:100%;
+      background-color: rgba($primary, 0.45);
+   }
+   &__container{
+      padding:1rem 0;
+      text-align: center;
+      position: absolute;
    }
 
    &__content{
-      margin:2rem 0;
       max-width:300px;
       height:250px;
       @include tablet{
-         max-width:600px;
-         height:400px;
+         max-width:500px;
+         height:350px;
       }
       @include desktop{
-         max-width:800px;
+         max-width:700px;
          height:450px;
       }
    }
 
    &__item-province{
-      fill:$secondary-light;
+      fill:$light-text;
+      opacity:65%;
+      stroke:rgba($primary, 0.50);
+      text-shadow: 5px 5px 5px rgba($primary-pressed,0.8);
+      box-shadow: 5px 5px 5px rgba($primary-pressed,0.8);
       &:focus{
          outline:0px;
          fill:$secondary;
@@ -40,12 +69,14 @@
 
    &__information{
       @include padding-format;
-      background-color: $light-text;
       width:100%;
       @include tablet{
          display:flex;
          flex-wrap:wrap;
-         justify-content: center;
+         justify-content: space-evenly;
+      }
+      @include desktop{
+         justify-content: space-evenly;
       }
    }
 
@@ -53,6 +84,16 @@
       margin:1rem 0;
       @include h2-format;
       width:100%;
+   }
+
+}
+.map__carousel{
+   background-color: transparent;
+   @include tablet{
+      width:80%;
+   }
+   @include desktop{
+      width:70%;
    }
 
 }
