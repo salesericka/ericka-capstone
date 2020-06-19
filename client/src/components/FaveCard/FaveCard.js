@@ -2,7 +2,6 @@ import React from 'react';
 import './FaveCard.scss';
 import axios from 'axios';
 import firebase from 'firebase';
-import { ComposableMap } from 'react-simple-maps';
 
 const API_URL = process.env.REACT_APP_API_URL;
 

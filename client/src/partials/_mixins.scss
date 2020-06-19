@@ -108,6 +108,7 @@
    &:hover{
       color:$accent;
       background-color: $primary-pressed;
+      cursor: pointer;
    }
 
    &:focus{

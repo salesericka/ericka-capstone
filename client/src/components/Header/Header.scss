@@ -11,6 +11,9 @@
       @include icon-format;
       align-self: flex-end;
       margin: 0 0.25rem 0 auto;
+      &:hover{
+         cursor: pointer;
+      }
    }
 
    &__open{

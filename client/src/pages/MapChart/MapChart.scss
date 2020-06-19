@@ -62,12 +62,14 @@
       }
       &:hover{
          fill:$other-pressed;
+         cursor: pointer;
       }
    }
 
    &__information{
       @include padding-format;
       width:100%;
+      height:90vh;
       background-color:rgba($primary, 0.7);
       @include tablet{
          display:flex;
@@ -90,6 +92,10 @@
 .map__carousel{
    background-color: transparent;
    margin-bottom:1rem;
+
+   &:hover{
+      cursor: pointer;
+   }
    @include tablet{
       max-width:500px;
    }

@@ -32,6 +32,7 @@ class Header extends React.Component{
    }
     
    componentDidMount=()=>{
+      
       firebase.auth().onAuthStateChanged(user=>{
         this.setState({
           signIn:!!user
@@ -41,30 +42,16 @@ class Header extends React.Component{
          list:[]
          }
          axios
-         .post(`${API_URL}/userBucketList/user`,userData)
-         .then(res=>{
-            console.log(res.data)
-         })
-         .catch(err=>{
-            console.log(err)
-         })
+            .post(`${API_URL}/userBucketList/user`,userData)
+            .then(res=>{
+               console.log(res.data)
+            })
+            .catch(err=>{
+               console.log(err)
+            })
+         
       })
    }
-
-   // addUser=()=>{
-   //    let userData={
-   //       userId:firebase.auth().currentUser.uid,
-   //       list:[]
-   //    }
-   //    axios
-   //       .post(`${API_URL}/userBucketList/user`,userData)
-   //       .then(res=>{
-   //          console.log(res.data)
-   //       })
-   //       .catch(err=>{
-   //          console.log(err)
-   //       })
-   // }
 
    callMenu=(e)=>{
       e.preventDefault();

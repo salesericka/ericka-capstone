@@ -4,6 +4,8 @@ import axios from 'axios';
 import FaveCard from '../../components/FaveCard/FaveCard';
 import userVid from '../../assets/vid.mp4';
 import firebase from 'firebase';
+import ghost from '../../assets/ghost.png';
+
 const API_URL = process.env.REACT_APP_API_URL;
 
 class UserPage extends React.Component{
@@ -11,25 +13,26 @@ class UserPage extends React.Component{
       userList:[],
       listSection:false
    }
+
    componentDidMount(){
       this.fetchList();
    }
 
    fetchList=()=>{
       const userId = firebase.auth().currentUser.uid
-      axios.get(`${API_URL}/userBucketList/user/${userId}`)
-      .then(response=>{
-         console.log('User List',response.data)
-            if(response.data.length !== 0){
-               this.setState({
-               userList:response.data.list,
-               listSection:true
-            })
-         }
-      })
-      .catch(err=>{
-         console.log(err);
-      })
+      axios
+         .get(`${API_URL}/userBucketList/user/${userId}`)
+         .then(response=>{
+               if(response.data.list.length!== 0){
+                  this.setState({
+                  userList:response.data.list,
+                  listSection:true
+               })
+            }
+         })
+         .catch(err=>{
+            console.log(err);
+         })
    }
 
    callDelete=(id)=>{
@@ -94,10 +97,16 @@ class UserPage extends React.Component{
             ):(
 
                <>
-               <section className="user-page__section">
-                  <h3 className="user-page__section-label">
-                     Empty List fool, add something
-                  </h3>
+               <section className="user-page__empty-section">
+                  <div className="user-page__empty-container">
+                     <img className="user-page__empty-pic" src={ghost} alt="ghost"/>
+                     <h4 className="user-page__section-label">
+                        Uh Oh! Empty list
+                     </h4>
+                     <p className="user-page__empty-message">
+                        Add a destination
+                     </p>
+                  </div>
                </section>
                </>
 

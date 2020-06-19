@@ -17,6 +17,7 @@ class MapChart extends React.Component{
       default:true,
       province:"Northwest Territories",
    }
+   
    callPlaces=(data)=>{
       let newData = data.replace(/ +/g, '')
       window.scrollTo(0,document.querySelector(".map__information").scrollHeight)
