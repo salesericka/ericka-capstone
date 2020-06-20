@@ -28,7 +28,22 @@
 .location__icon-plus{
    @include icon-format     
 }
-
+.location__overlay{
+   position: absolute;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   width:100%;
+   height:100%;
+   color:transparent;
+   &:hover{
+      color:$light-text;
+      background-color: rgba($color: #000000, $alpha: 0.5);
+      font-size:25px;
+      font-weight:800;
+   }
+   
+}
 .modal{
    display:flex;
    justify-content: center;
@@ -135,6 +150,10 @@
 
    &__comment{
       margin-top:0.5rem;
+   }
+
+   &__user-photo{
+      @include user-photo-format;
    }
 }
 

@@ -7,6 +7,7 @@ import LocationItem from '../../components/LocationItem/LocationItem';
 import userVid from '../../assets/vid.mp4';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import arrow from '../../assets/arrow.svg';
 
 const API_URL = process.env.REACT_APP_API_URL;
 
@@ -17,7 +18,7 @@ class MapChart extends React.Component{
       default:true,
       province:"Northwest Territories",
    }
-   
+
    callPlaces=(data)=>{
       let newData = data.replace(/ +/g, '')
       window.scrollTo(0,document.querySelector(".map__information").scrollHeight)
@@ -45,8 +46,7 @@ class MapChart extends React.Component{
          })
       })
    }
-   scrollToPage=(e)=>{
-      console.log(e)
+   scrollToPage=()=>{
       window.scrollTo(0,document.querySelector(".map__information").scrollHeight)
    }
    render(){
@@ -57,9 +57,7 @@ class MapChart extends React.Component{
                <video className="map__video" autoPlay={true} loop={true}>
                   <source src={userVid}/>
                </video>
-               <h1 className="map__title" onClick={()=>this.scrollToPage(this)}>
-               Arrow Down Here
-               </h1>
+               <img className="map__icon-down" src={arrow} alt="arrow" onClick={()=>this.scrollToPage(this)}/>
             <div className="map__video-overlay"></div>
 
                <section className="map__container">
@@ -96,6 +94,7 @@ class MapChart extends React.Component{
                   {this.state.province}
                </h2>
                   <Carousel className="map__carousel" showThumbs={false}>
+
                      {this.state.places.map(place=>{
                         return<LocationItem
                            key={place.id}

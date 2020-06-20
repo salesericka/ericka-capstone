@@ -15,11 +15,16 @@ class UserPage extends React.Component{
    }
 
    componentDidMount(){
-      this.fetchList();
+      firebase.auth().onAuthStateChanged((user) => {
+         if (user) {
+           this.fetchList(user.uid)
+         } else {
+           console.log("false")
+         }
+      });
    }
 
-   fetchList=()=>{
-      const userId = firebase.auth().currentUser.uid
+   fetchList=(userId)=>{
       axios
          .get(`${API_URL}/userBucketList/user/${userId}`)
          .then(response=>{

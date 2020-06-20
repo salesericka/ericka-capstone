@@ -33,17 +33,19 @@
    }
 
    &__bucket-list{
-      @include padding-format;
       justify-content: space-between;
       display:flex;
       flex-wrap: wrap;
       width:80%;
       margin:0 auto;
+      @include desktop{
+         width:90%;
+      }
    }
    &__section{
       @include padding-format;
       background-color:rgba($primary, 0.7);
-
+      min-height:75vh;
    }
 
    &__section-label{

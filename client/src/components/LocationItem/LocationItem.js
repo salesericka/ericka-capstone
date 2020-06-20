@@ -19,18 +19,6 @@ class LocationItem extends React.Component {
     comment:{}
   }
 
-  // addToList=(e)=>{
-  //   e.preventDefault();
-  //   e.stopPropagation();
-  //   axios
-  //     .post(`${API_URL}/userBucketList`, this.props)
-  //     .then(response=>{
-  //       this.setState({
-  //         addStatus:"Added"
-  //       })
-  //     })
-  // }
-
   addToList=(e)=>{
     e.preventDefault();
     e.stopPropagation();
@@ -65,8 +53,9 @@ class LocationItem extends React.Component {
   }
   render(){
     return (
+
       <div className="location__item" id={this.props.id} onClick={this.handleModal}>
-        
+        <div className="location__overlay">Click for more details</div>
         <img className="location__image" src={this.props.image} alt="location"/>
         <h3 className="location__name">
             {this.props.name}
@@ -124,7 +113,7 @@ class LocationItem extends React.Component {
                     </h3>
                     <li className="modal__comment-item comment-item">
                     <div className="comment-item__user-wrapper">
-                      {/* <img className="comment-item__user-photo" src="" alt="profile"/> */}
+                      {/* <img className="comment-item__user-photo" src={} alt=" "/> */}
                     </div>
                       <div className="comment-item__info-wrapper">
                         <h4 className="comment-item__user">
@@ -140,7 +129,7 @@ class LocationItem extends React.Component {
                         key={input.id}
                         > 
                           <div className="comment-item__user-wrapper">
-                            {/* <img className="comment-item__user-photo" src="" alt="profile"/> */}
+                            <img className="comment-item__user-photo" src={input.authorImg} alt="profile"/>
                           </div>
                           <div className="comment-item__info-wrapper">
                             <h4 className="comment-item__user">
@@ -161,7 +150,9 @@ class LocationItem extends React.Component {
 
             </section>
           </Modal>
+          
       </div>
+
     );
   }
 }

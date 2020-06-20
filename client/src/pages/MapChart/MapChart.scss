@@ -16,15 +16,16 @@
       width:100%;
       height:100vh;
       object-fit: cover;
-      // max-height:25vh;
    }
-   &__title{
+
+   &__icon-down{
+      width:30px;
       position: absolute;
-      color:$light-text;
       z-index:1;
       bottom:10px;
       &:hover{
-         color:$accent;
+         width:35px;
+         cursor: pointer;
       }
    }
    &__video-overlay{
@@ -97,6 +98,6 @@
       cursor: pointer;
    }
    @include tablet{
-      max-width:500px;
+      max-width:750px;
    }
 }

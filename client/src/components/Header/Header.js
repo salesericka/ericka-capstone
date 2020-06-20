@@ -32,11 +32,12 @@ class Header extends React.Component{
    }
     
    componentDidMount=()=>{
-      
+
       firebase.auth().onAuthStateChanged(user=>{
         this.setState({
           signIn:!!user
         })
+        
         let userData={
          userId:user.uid,
          list:[]

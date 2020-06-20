@@ -49,9 +49,7 @@
    @include tablet{
       width:17px;
    }
-   // @include desktop{
-   //    width:20px;
-   // }
+
 }
 
 @mixin user-photo-wrapper{
@@ -70,7 +68,6 @@
    color:$light-text;
    font-size: 15px;
    font-weight:700;
-   // margin:0.5rem 0;
    &:hover{
       color:$accent;
    }
