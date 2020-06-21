@@ -8,7 +8,7 @@ const API_URL = process.env.REACT_APP_API_URL;
 class FaveCard extends React.Component{
 
    state={
-      status:"O",
+      status:"Mark as visited",
       commentForm:false,
       statusClass:"fave-card__button-not-visited"
    }
@@ -18,7 +18,7 @@ class FaveCard extends React.Component{
       axios.put(`${API_URL}/userBucketList/user/${userId}/${id}`)
       .then(res=>{
          this.setState({
-            status:"Y",
+            status:"Visited",
             commentForm:true,
             statusClass:"fave-card__button-visited"
          })
@@ -29,7 +29,7 @@ class FaveCard extends React.Component{
    checkCardStatus=()=>{
       if(this.props.statusVisit === true){
          this.setState({
-            status:"Y",
+            status:"Visited",
             statusClass:"fave-card__button-visited",
          })
       }

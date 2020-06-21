@@ -18,8 +18,6 @@ class UserPage extends React.Component{
       firebase.auth().onAuthStateChanged((user) => {
          if (user) {
            this.fetchList(user.uid)
-         } else {
-           console.log("false")
          }
       });
    }

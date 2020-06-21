@@ -32,17 +32,16 @@ class Header extends React.Component{
    }
     
    componentDidMount=()=>{
-
       firebase.auth().onAuthStateChanged(user=>{
-        this.setState({
+         this.setState({
           signIn:!!user
-        })
-        
-        let userData={
-         userId:user.uid,
-         list:[]
-         }
-         axios
+         })
+         if (user){
+            let userData={
+            userId:user.uid,
+            list:[]
+            }
+            axios
             .post(`${API_URL}/userBucketList/user`,userData)
             .then(res=>{
                console.log(res.data)
@@ -50,7 +49,7 @@ class Header extends React.Component{
             .catch(err=>{
                console.log(err)
             })
-         
+         }
       })
    }
 

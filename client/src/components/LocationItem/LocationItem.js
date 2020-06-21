@@ -55,13 +55,13 @@ class LocationItem extends React.Component {
     return (
 
       <div className="location__item" id={this.props.id} onClick={this.handleModal}>
-        <div className="location__overlay">Click for more details</div>
+        <div className="location__overlay">
+          Click for more details
+        </div>
         <img className="location__image" src={this.props.image} alt="location"/>
         <h3 className="location__name">
             {this.props.name}
         </h3> 
-
-
           <Modal
             isOpen={this.state.showModal}
             onRequestClose={this.handleModal}
@@ -78,14 +78,11 @@ class LocationItem extends React.Component {
                 data-tip="Close"
               />
               <h2 className="modal__name">
-                {this.props.name}
-                
+                {this.props.name}              
               </h2>
-
               <p className="modal__info">
                 {this.props.province}, {this.props.country}
               </p>
-
               <div className="modal__info-container">
                 <div className="modal__image-wrapper">
                   <img className="modal__image" 
@@ -93,34 +90,28 @@ class LocationItem extends React.Component {
                     alt="location" 
                   />
                 </div>
-                
                 <div className="modal__d-b-wrapper">
                   <p className="modal__description">
                     {this.props.description}
                   </p>
-                  
                   <button className="modal__button-add" 
                     onClick={this.addToList}
                   >
-                  
                     {this.state.addStatus}
                   </button>
-
-
                   <ul className="modal__comment-list">
                     <h3 className="modal__comment-label">
                         Comments
                     </h3>
                     <li className="modal__comment-item comment-item">
                     <div className="comment-item__user-wrapper">
-                      {/* <img className="comment-item__user-photo" src={} alt=" "/> */}
                     </div>
                       <div className="comment-item__info-wrapper">
                         <h4 className="comment-item__user">
-                        {this.state.comment.author}
+                          {this.state.comment.author}
                         </h4>
                         <p className="comment-item__comment">
-                        {this.state.comment.quote}
+                          {this.state.comment.quote}
                         </p>
                       </div>
                     </li>
@@ -141,18 +132,12 @@ class LocationItem extends React.Component {
                           </div>
                         </li>
                     })}
-              </ul>
-
+                  </ul>
+                </div>
               </div>
-              </div>
-
-              
-
             </section>
           </Modal>
-          
       </div>
-
     );
   }
 }
