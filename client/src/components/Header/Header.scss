@@ -97,3 +97,8 @@
    align-self: flex-end;
    margin-left: auto;
 }
+
+.active{
+   color:$accent;
+   text-decoration: underline;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import { ComposableMap, Geographies, Geography} from "react-simple-maps";
+import { ComposableMap, Geographies, Geography, Marker} from "react-simple-maps";
 import './MapChart.scss';
 import Canada from '../../canada_provinces.json';
 import axios from 'axios';
@@ -17,6 +17,8 @@ class MapChart extends React.Component{
       toolTip:"",
       default:true,
       province:"Northwest Territories",
+      userLat:"",
+      userLong:""
    }
 
    callPlaces=(data)=>{
@@ -35,6 +37,14 @@ class MapChart extends React.Component{
 
    componentDidMount=()=>{
       this.callDefault();
+      if (navigator.geolocation) {
+         navigator.geolocation.watchPosition((position)=>{
+           this.setState({
+              userLat:position.coords.latitude,
+              userLong:position.coords.longitude
+           })          
+         });
+       }
    }
 
    callDefault=()=>{
@@ -81,6 +91,9 @@ class MapChart extends React.Component{
                            />)
                         }
                      </Geographies>
+                     <Marker coordinates={[this.state.userLong, this.state.userLat]}>
+                        <circle r={7} fill="#9a5e2a" />
+                     </Marker>
                </ComposableMap>
             </section>
 

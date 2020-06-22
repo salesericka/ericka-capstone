@@ -75,15 +75,15 @@ class FaveCard extends React.Component{
                      {this.props.province}, {this.props.country}
                   </p>
                </div>
-
-               <button className="fave-card__button-remove" 
-                  onClick={()=>this.props.callDelete(this.props.id)}>
-                  X
-               </button>
                <button className={this.state.statusClass}
                onClick={()=>this.callVisited(this.props.id)}>
                   {this.state.status}
                </button>
+               <button className="fave-card__button-remove" 
+                  onClick={()=>this.props.callDelete(this.props.id)}>
+                  X
+               </button>
+               
 
             </div>
             <div className="fave-card__image-wrapper">

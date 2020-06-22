@@ -17,7 +17,8 @@ class Header extends React.Component{
       signIn:false,
       showNav:false,
       headerClass:"header",
-      headerIcon:menu
+      headerIcon:menu,
+      activePage:""
    }
   
    uiConfig = {
@@ -44,12 +45,27 @@ class Header extends React.Component{
             axios
             .post(`${API_URL}/userBucketList/user`,userData)
             .then(res=>{
-               console.log(res.data)
+               // console.log(res.data)
             })
             .catch(err=>{
                console.log(err)
             })
          }
+
+         if (window.location.pathname === '/userpage') {
+            this.setState({
+              activePage : "bucket"
+            })
+          }
+          else if (window.location.pathname === '/location') {
+            this.setState({
+               activePage : "location"
+             })             
+          } else {
+            this.setState({
+               activePage : "home"
+             })   
+          }
       })
    }
 
@@ -68,6 +84,24 @@ class Header extends React.Component{
             headerIcon:menu
          })
       }
+   }
+
+   homeLink=()=>{
+      this.setState({
+         activePage:"home"
+      })
+   }
+
+   locationLink=()=>{
+      this.setState({
+         activePage:"location"
+      })
+   }
+
+   bucketLink=()=>{
+      this.setState({
+         activePage:"bucket"
+      })
    }
 
    render(){
@@ -94,18 +128,18 @@ class Header extends React.Component{
                      </Link>
                   </div>
                   <div className="nav__link-wrapper">
-                     <Link to="/" className="link">
-                        <h4 className="nav__homepage">
+                     <Link to="/" className="link" onClick={this.homeLink}>
+                        <h4 className={`nav__homepage ${this.state.activePage === 'home' ? 'active' : ''}`}>
                            Home
                         </h4>
                      </Link>
-                     <Link to="/location" className="link">
-                        <h4 className="nav__location">
+                     <Link to="/location" className="link" onClick={this.locationLink}>
+                        <h4 className={`nav__location ${this.state.activePage === 'location' ? 'active' : ''}` }>
                            Location
                         </h4>
                      </Link>
-                     <Link to="/userpage" className="link">
-                        <h4 className="nav__user-list">
+                     <Link to="/userpage" className="link" onClick={this.bucketLink}>
+                        <h4 className={`nav__user-list ${this.state.activePage === 'bucket' ? 'active' : ''}`}>
                            Bucket List
                         </h4>
                      </Link>
