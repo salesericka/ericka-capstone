@@ -92,7 +92,7 @@ class MapChart extends React.Component{
                         }
                      </Geographies>
                      <Marker coordinates={[this.state.userLong, this.state.userLat]}>
-                        <circle r={7} fill="#9a5e2a" />
+                        <circle r={5} fill="#9a5e2a" />
                      </Marker>
                </ComposableMap>
             </section>
