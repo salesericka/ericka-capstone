@@ -98,6 +98,10 @@
       cursor: pointer;
    }
    @include tablet{
-      max-width:750px;
+      max-width:500px;
+   }
+
+   @include desktop{
+      max-width:650px;
    }
 }

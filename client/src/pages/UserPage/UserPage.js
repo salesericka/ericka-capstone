@@ -64,6 +64,8 @@ class UserPage extends React.Component{
                province={picked.province}
                statusVisit={picked.statusVisit}
                country={picked.country}
+               long={picked.long}
+               lat={picked.lat}
                callDelete={this.callDelete}
             />
          )

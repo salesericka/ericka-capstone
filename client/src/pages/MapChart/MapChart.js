@@ -117,7 +117,9 @@ class MapChart extends React.Component{
                            id={place.id}
                            province={place.province}
                            country={place.country}
-                           comments={place.comments}        
+                           comments={place.comments}
+                           long={place.longitude}
+                           lat={place.latitude}
                         />
                      })}
                      

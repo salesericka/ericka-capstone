@@ -10,7 +10,10 @@ class FaveCard extends React.Component{
    state={
       status:"Mark as visited",
       commentForm:false,
-      statusClass:"fave-card__button-not-visited"
+      statusClass:"fave-card__button-not-visited",
+      imageCard:true,
+      userLat:"",
+      userLong:""
    }
 
    callVisited=(id)=>{
@@ -20,7 +23,8 @@ class FaveCard extends React.Component{
          this.setState({
             status:"Visited",
             commentForm:true,
-            statusClass:"fave-card__button-visited"
+            statusClass:"fave-card__button-visited",
+            imageCard:false
          })
       })
       .catch(err=>console.log(err))
@@ -37,6 +41,14 @@ class FaveCard extends React.Component{
 
    componentDidMount=()=>{
       this.checkCardStatus();
+      if (navigator.geolocation) {
+         navigator.geolocation.watchPosition((position)=>{
+           this.setState({
+              userLat:position.coords.latitude,
+              userLong:position.coords.longitude
+           })          
+         });
+       }
    }
 
    sendComment=(e)=>{
@@ -54,13 +66,43 @@ class FaveCard extends React.Component{
          })
          .catch(err=>console.log(err))
          e.target.comment.value=""
+         this.setState({
+            commentForm:false,
+            imageCard:true
+         })
    }
 
    cancelComment=(e)=>{
       e.preventDefault();
       this.setState({
-         commentForm:false
+         commentForm:false,
+         imageCard:true
       })
+   }
+
+   distanceCalculator=(lat1, lon1, lat2, lon2, unit)=>{
+      if ((lat1 == lat2) && (lon1 == lon2)) {
+         return 0;
+      }
+      else {
+         var radlat1 = Math.PI * lat1/180;
+         var radlat2 = Math.PI * lat2/180;
+         var theta = lon1-lon2;
+         var radtheta = Math.PI * theta/180;
+         var dist = Math.sin(radlat1) * Math.sin(radlat2) + Math.cos(radlat1) * Math.cos(radlat2) * Math.cos(radtheta);
+         if (dist > 1) {
+            dist = 1;
+         }
+         dist = Math.acos(dist);
+         dist = dist * 180/Math.PI;
+         dist = dist * 60 * 1.1515;
+         if (unit=="K") { dist = dist * 1.609344 }
+         return dist;
+      }
+   }
+
+   getDistance=()=>{
+      return Math.round(this.distanceCalculator(this.state.userLat,this.state.userLong,this.props.lat,this.props.long,"K"))
    }
 
    render(){
@@ -71,9 +113,12 @@ class FaveCard extends React.Component{
                   <h3 className="fave-card__name">
                      {this.props.name}
                   </h3>
-                  <p className="fave-card__info">
+                  <h5 className="fave-card__info">
                      {this.props.province}, {this.props.country}
-                  </p>
+                  </h5>
+                  <h5 className="fave-card__distance fave-card__info">
+                     Distance: <span className="fave-card__distance-unit" >{this.getDistance()} km</span>
+                  </h5>
                </div>
                <button className={this.state.statusClass}
                onClick={()=>this.callVisited(this.props.id)}>
@@ -87,10 +132,11 @@ class FaveCard extends React.Component{
 
             </div>
             <div className="fave-card__image-wrapper">
-               <img className="fave-card__image" 
+               {this.state.imageCard && <img className="fave-card__image" 
                   alt="scenery" 
                   src={this.props.image}
-               />
+               />}
+               
             </div>
            
                {this.state.commentForm && 
